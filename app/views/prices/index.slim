@@ -1,11 +1,24 @@
-.row 
+.row.p-5
   .col-6 
-    h1 Rifa Camila
+    h1 GRAN RIFA GRAN
   .col-6.day
-    = link_to raffles_path do
-      h1 Comprar Número
+    = link_to raffles_path, class: 'btn btn-primary' do
+      h2 Comprar Número
+.row.p-3 
+  .col-10
+    p Rifa a beneficio de Camila, Camiloka, Tia Loca, La Secretaria o como ustedes la conozcan.
+    p Lamentablemente a mediados de Febrero, Camila sufrio una crisis de dolor y otros sintomas que hacían pensar en que los malditos calculos habían vuelto.
+    p Es por ello que luego de una hospitalación y varios controles, los doctores decidierón operar, pero debido al coronavirus y a la falta de camas en el sector público, debimos buscar otras opciones.
+    p Luego de buscar una llegamos a una opción que se ajustaba de alguna forma al presupuesto, pero aun nos falta un extra que cubrir.
+    p es por ello que esta rifa cuenta con 500 numeros, los cuales costean exactamente los $500.000 que nos faltan para operar de forma urgente.
+  .col-2
+
 
 .row
+  h1 Premios
+  p A continuación la lista de premios de esta rifa, muchos de los premios son donados por nuestros EMPRENDIAMIGOS, es por ello que de manera de agradecimiento agregamos un link a sus redes sociales.
+  p Siempre agradecemos que puedan seguirlos y regalar un like.
+
   - @prices.each do |price|
     .col-sm-3
       .card
@@ -14,7 +27,7 @@
             h5.card-title = "#{price.number} #{price. name}"
             p.card-text  = "#{price.description}"
         .card-footer
-          - unless price.rrss == 'Anonimo'
+          - unless price.rrss == 'Anónimo'
             a.btn.btn-primary href="#{price.rrss}" target="blank_"  RRSS 
           - else
             p Anonimo

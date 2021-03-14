@@ -12,7 +12,9 @@
 
   background-color: var(--background-color);
   color: var(--text-color);
-  
+  p{
+    font-size: 1.3rem;
+  }
   .schedule {
     .header {
       display: grid;
