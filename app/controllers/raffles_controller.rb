@@ -6,12 +6,24 @@ class RafflesController < ApplicationController
 
   def new
     Rails.logger.info params.inspect
-    @number = params[:number]
+    @number = []
+    params[:number].each do |num, sta|
+      @number << num
+    end
+    Rails.logger.info @number
+    @number
+
   end
   
   def create
-    raffle = Raffle.create!(raffle_params(params))
-    flash.alert = 'Ingresado con éxito' if raffle
+    require 'json'
+    JSON.parse(raffle_params(params)[:number]).each do |number|
+      Raffle.create!(name: raffle_params(params)[:number], 
+                    phone: raffle_params(params)[:phone],
+                    mail: raffle_params(params)[:mail],
+                    number: number)
+    end
+    flash.alert = 'Ingresado con éxito'
     redirect_to raffles_path
   end
     

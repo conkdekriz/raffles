@@ -5078,3 +5078,1802 @@ Processing by RafflesController#index as HTML
 Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 1.1ms | Allocations: 40419)
 
 
+Started GET "/raffles/new?number=1" for ::1 at 2021-03-14 13:54:53 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"1"}
+<ActionController::Parameters {"number"=>"1", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 7.8ms | Allocations: 8176)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.1ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2049)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 13791)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 14:00:29 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"Te64sSMJwPLVsCa3dokM90CPxOOAThSlfkVeXx68uu7phkh8n0VdIA5HTk5sKj0RRqeRs9vwaVAtDQDB1qJ3bg==", "raffle"=>{"name"=>"margor", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"1"}}
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:13:in `create'
+  [1m[36mRaffle Create (0.9ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "990681908"], ["number", 1], ["created_at", "2021-03-14 17:00:29.643446"], ["updated_at", "2021-03-14 17:00:29.643446"]]
+  ↳ app/controllers/raffles_controller.rb:13:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:13:in `create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 12ms (ActiveRecord: 1.9ms | Allocations: 2913)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:00:29 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 46.0ms | Allocations: 37753)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.7ms | Allocations: 1822)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.4ms | Allocations: 40363)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:13:00 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (1.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 41.5ms | Allocations: 37772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 12.6ms | Allocations: 1990)
+  Rendered layouts/_footer_fit.slim (Duration: 1.9ms | Allocations: 2053)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 1.2ms | Allocations: 43380)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:13:01 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 15.8ms | Allocations: 9762)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.1ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 12374)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:13:10 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.2ms | Allocations: 9761)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.9ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.8ms | Allocations: 2049)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 15372)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:13:20 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.0ms | Allocations: 9761)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.0ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 2.5ms | Allocations: 2049)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 15378)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:13:29 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 4.6ms | Allocations: 9969)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 4.1ms | Allocations: 2049)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 15572)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:14:17 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 393.1ms | Allocations: 173055)
+Completed 500 Internal Server Error in 396ms (ActiveRecord: 0.0ms | Allocations: 173978)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `numbee' for #<#<Class:0x00007f610d414220>:0x00007f610d419068>
+Did you mean?  @number):
+    4: .row
+    5:   .col-8
+    6:     p Para comprar debes realizar una tranferencia a cualquiera de estas cuentas con el asunto 
+    7:     h3 Rifa camila "#{numbee}"
+    8: = form_for 'raffle', url: raffles_path do
+    9:   .form-group
+   10:     label for="name" Nombre 
+  
+app/views/raffles/new.slim:7
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:14:26 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 323.7ms | Allocations: 173113)
+Completed 500 Internal Server Error in 326ms (ActiveRecord: 0.0ms | Allocations: 174037)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `number' for #<#<Class:0x00007f6100417068>:0x00007f6100415218>
+Did you mean?  @number):
+    4: .row
+    5:   .col-8
+    6:     p Para comprar debes realizar una tranferencia a cualquiera de estas cuentas con el asunto 
+    7:     h3 Rifa camila "#{number}"
+    8: = form_for 'raffle', url: raffles_path do
+    9:   .form-group
+   10:     label for="name" Nombre 
+  
+app/views/raffles/new.slim:7
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:14:46 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 316.8ms | Allocations: 173012)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.0ms | Allocations: 173936)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `number' for #<#<Class:0x0000559e39c25cb8>:0x0000559e39c37d00>
+Did you mean?  @number):
+    4: .row
+    5:   .col-8
+    6:     p Para comprar debes realizar una tranferencia a cualquiera de estas cuentas con el asunto 
+    7:     h3 =  "Rifa camila #{number}"
+    8: = form_for 'raffle', url: raffles_path do
+    9:   .form-group
+   10:     label for="name" Nombre 
+  
+app/views/raffles/new.slim:7
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:14:59 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 9.9ms | Allocations: 9998)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 8.4ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 5.5ms | Allocations: 2049)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 15635)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:17:33 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 7.0ms | Allocations: 10580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 5.1ms | Allocations: 2049)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 16187)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:18:13 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.1ms | Allocations: 10580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 4.0ms | Allocations: 2049)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 16195)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:18:15 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.7ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.1ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:18:49 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.2ms | Allocations: 11541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.0ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 4.0ms | Allocations: 2049)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 17174)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:19:17 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 6.0ms | Allocations: 10580)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.8ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 4.1ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 16199)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:21:20 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 8.6ms | Allocations: 11926)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.2ms | Allocations: 1991)
+  Rendered layouts/_footer_fit.slim (Duration: 3.2ms | Allocations: 2062)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 17572)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:22:07 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 139)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: ff624761dc7a9a0f58cf
+Version: webpack 4.43.0
+Time: 2014ms
+Built at: 03/14/2021 2:22:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-7aba80fedfa517e0c082.js    144 KiB  application  [emitted] [immutable]  application
+js/application-7aba80fedfa517e0c082.js.map    158 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-7aba80fedfa517e0c082.js js/application-7aba80fedfa517e0c082.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 7.38 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 5252.1ms | Allocations: 3219)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 5255ms (Views: 5254.1ms | ActiveRecord: 0.0ms | Allocations: 4012)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:22:20 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.0ms | Allocations: 132)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 05bbbf12fb237de5f78c
+Version: webpack 4.43.0
+Time: 2059ms
+Built at: 03/14/2021 2:22:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-394103bb3793100a2aa3.js    144 KiB  application  [emitted] [immutable]  application
+js/application-394103bb3793100a2aa3.js.map    158 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-394103bb3793100a2aa3.js js/application-394103bb3793100a2aa3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 7.39 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 5191.3ms | Allocations: 3213)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 5201ms (Views: 5199.8ms | ActiveRecord: 0.0ms | Allocations: 4004)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:26:52 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 6.8ms | Allocations: 13422)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.0ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 19039)
+
+
+Started GET "/raffles/new?number=2" for ::1 at 2021-03-14 14:27:38 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"2"}
+<ActionController::Parameters {"number"=>"2", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.7ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.8ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2623)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:27:41 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 38.1ms | Allocations: 37695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.2ms | Allocations: 1822)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.4ms | Allocations: 40281)
+
+
+Started GET "/raffles/new?number=3" for ::1 at 2021-03-14 14:27:46 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"3"}
+<ActionController::Parameters {"number"=>"3", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.6ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.5ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 2615)
+
+
+Started GET "/raffles/new?number=3" for ::1 at 2021-03-14 14:27:49 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"3"}
+<ActionController::Parameters {"number"=>"3", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.4ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.2ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 2618)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:28:09 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 47.6ms | Allocations: 37694)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1985)
+  Rendered layouts/_footer_fit.slim (Duration: 2.8ms | Allocations: 2062)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.4ms | Allocations: 43326)
+
+
+Started GET "/" for ::1 at 2021-03-14 14:28:12 -0300
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.7ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:22
+  Rendered prices/index.slim within layouts/rifa (Duration: 9.2ms | Allocations: 12015)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.5ms | Allocations: 1822)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.7ms | Allocations: 14755)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:28:28 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 42.4ms | Allocations: 32881)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1822)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.5ms | Allocations: 35339)
+
+
+Started GET "/raffles/new?number=24" for ::1 at 2021-03-14 14:28:32 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"24"}
+<ActionController::Parameters {"number"=>"24", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 9.4ms | Allocations: 13422)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.8ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 16029)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:28:54 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 55.7ms | Allocations: 37696)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1985)
+  Rendered layouts/_footer_fit.slim (Duration: 2.0ms | Allocations: 2062)
+Completed 200 OK in 68ms (Views: 66.5ms | ActiveRecord: 0.3ms | Allocations: 43302)
+
+
+Started GET "/raffles/new?number=15" for ::1 at 2021-03-14 14:28:55 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"15"}
+<ActionController::Parameters {"number"=>"15", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 14.2ms | Allocations: 13420)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.9ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 16040)
+
+
+Started GET "/raffles/new?number=15" for ::1 at 2021-03-14 14:30:09 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"15"}
+<ActionController::Parameters {"number"=>"15", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 5.8ms | Allocations: 14159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.5ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 19769)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:30:52 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 42.2ms | Allocations: 37696)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.5ms | Allocations: 1822)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.3ms | Allocations: 40299)
+
+
+Started GET "/raffles/new?number=65" for ::1 at 2021-03-14 14:30:55 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"65"}
+<ActionController::Parameters {"number"=>"65", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.6ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.4ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2623)
+
+
+Started GET "/raffles/new" for ::1 at 2021-03-14 14:30:58 -0300
+Processing by RafflesController#new as HTML
+<ActionController::Parameters {"controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2611)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:31:03 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 47.5ms | Allocations: 32877)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.9ms | Allocations: 1819)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.4ms | Allocations: 35326)
+
+
+Started GET "/raffles/new?number=135" for ::1 at 2021-03-14 14:31:09 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>"135"}
+<ActionController::Parameters {"number"=>"135", "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.0ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 2614)
+
+
+Started GET "/raffles/new" for ::1 at 2021-03-14 14:31:14 -0300
+Processing by RafflesController#new as HTML
+<ActionController::Parameters {"controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.4ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.9ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 2617)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:31:18 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 36.3ms | Allocations: 32877)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1819)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.4ms | Allocations: 35343)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:35:30 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 6.1ms | Allocations: 7208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.3ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 4.3ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.3ms | Allocations: 12810)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:36:52 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 5.8ms | Allocations: 7270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.4ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 2.8ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.3ms | Allocations: 12852)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:37:38 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 6.6ms | Allocations: 9320)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 17.1ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 3.2ms | Allocations: 2063)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms | Allocations: 14931)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:37:51 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 7.1ms | Allocations: 9313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.7ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 2.7ms | Allocations: 2049)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms | Allocations: 14914)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:39:10 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.6ms | Allocations: 3222)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: f6f1ab11070115e7162b
+Version: webpack 4.43.0
+Time: 1435ms
+Built at: 03/14/2021 2:39:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5d3a9e6a375ce35566c8.js    144 KiB  application  [emitted] [immutable]  application
+js/application-5d3a9e6a375ce35566c8.js.map    159 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5d3a9e6a375ce35566c8.js js/application-5d3a9e6a375ce35566c8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 7.86 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3652.6ms | Allocations: 3221)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3659ms (Views: 3657.4ms | ActiveRecord: 0.3ms | Allocations: 7085)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:40:32 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 9.3ms | Allocations: 9362)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 3b2e5258b4e435784331
+Version: webpack 4.43.0
+Time: 1408ms
+Built at: 03/14/2021 2:40:35 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-467c95f159448c2abe86.js    144 KiB  application  [emitted] [immutable]  application
+js/application-467c95f159448c2abe86.js.map    159 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-467c95f159448c2abe86.js js/application-467c95f159448c2abe86.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3662.7ms | Allocations: 3376)
+  Rendered layouts/_footer_fit.slim (Duration: 2.1ms | Allocations: 2049)
+Completed 200 OK in 3678ms (Views: 3676.9ms | ActiveRecord: 0.3ms | Allocations: 16347)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:41:54 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.6ms | Allocations: 3222)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 0cd4f31ff0f3f4335dd8
+Version: webpack 4.43.0
+Time: 1467ms
+Built at: 03/14/2021 2:41:58 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e29e3927fc870bfe82df.js    145 KiB  application  [emitted] [immutable]  application
+js/application-e29e3927fc870bfe82df.js.map    159 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e29e3927fc870bfe82df.js js/application-e29e3927fc870bfe82df.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8.2 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3764.8ms | Allocations: 3213)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3771ms (Views: 3769.5ms | ActiveRecord: 0.3ms | Allocations: 7077)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:43:34 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 10.8ms | Allocations: 9399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.2ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 3.3ms | Allocations: 2049)
+Completed 200 OK in 26ms (Views: 23.6ms | ActiveRecord: 0.4ms | Allocations: 14995)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:44:50 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.0ms | Allocations: 3222)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 609ab0e5886b47e1b75e
+Version: webpack 4.43.0
+Time: 1447ms
+Built at: 03/14/2021 2:44:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b7ad635648a2de1743a9.js    145 KiB  application  [emitted] [immutable]  application
+js/application-b7ad635648a2de1743a9.js.map    159 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b7ad635648a2de1743a9.js js/application-b7ad635648a2de1743a9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8.33 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3747.8ms | Allocations: 3213)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3755ms (Views: 3753.3ms | ActiveRecord: 0.4ms | Allocations: 7075)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:46:15 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.6ms | Allocations: 3222)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: ca616d73a498802ee0ca
+Version: webpack 4.43.0
+Time: 1432ms
+Built at: 03/14/2021 2:46:18 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-745c4fc9392bb67cde06.js    145 KiB  application  [emitted] [immutable]  application
+js/application-745c4fc9392bb67cde06.js.map    160 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-745c4fc9392bb67cde06.js js/application-745c4fc9392bb67cde06.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8.66 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3655.2ms | Allocations: 3207)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3662ms (Views: 3660.5ms | ActiveRecord: 0.3ms | Allocations: 7058)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:46:57 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.7ms | Allocations: 3222)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.9ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms | Allocations: 5682)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:48:07 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.5ms | Allocations: 3222)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 449f83cb6876a2ad0c31
+Version: webpack 4.43.0
+Time: 1590ms
+Built at: 03/14/2021 2:48:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e99936af500801711c31.js    145 KiB  application  [emitted] [immutable]  application
+js/application-e99936af500801711c31.js.map    160 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e99936af500801711c31.js js/application-e99936af500801711c31.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8.8 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3855.3ms | Allocations: 3273)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3861ms (Views: 3859.5ms | ActiveRecord: 0.3ms | Allocations: 7130)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:49:33 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 9.5ms | Allocations: 9740)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.8ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 3.1ms | Allocations: 2049)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.5ms | Allocations: 15342)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 14:50:07 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 15.6ms | Allocations: 9658)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: e7b558f195fa7e908dfe
+Version: webpack 4.43.0
+Time: 1620ms
+Built at: 03/14/2021 2:50:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-af9128d36152da0f807a.js    145 KiB  application  [emitted] [immutable]  application
+js/application-af9128d36152da0f807a.js.map    160 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-af9128d36152da0f807a.js js/application-af9128d36152da0f807a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 8.98 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 4333.4ms | Allocations: 3384)
+  Rendered layouts/_footer_fit.slim (Duration: 2.0ms | Allocations: 2049)
+Completed 200 OK in 4357ms (Views: 4354.8ms | ActiveRecord: 0.4ms | Allocations: 16641)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:19:04 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 332.5ms | Allocations: 177219)
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.5ms | Allocations: 178289)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_raffles_path' for #<#<Class:0x00007f6110e5f498>:0x00007f6110e5d828>
+Did you mean?  new_raffle_path):
+     5: h1 Rifa
+     6: .schedule
+     7:   .body.selected-number 
+     8:     = form_for 'numbers', url: new_raffles_path do
+     9:       - 500.times.each do |number|
+    10:         - unless raffles.include? (number+1).to_s
+    11:           input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
+  
+app/views/raffles/index.slim:8
+Started GET "/raffles" for ::1 at 2021-03-14 15:19:23 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.8ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 10.5ms | Allocations: 10523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.4ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2049)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.8ms | Allocations: 16118)
+
+
+Started POST "/raffles/new" for ::1 at 2021-03-14 15:19:35 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/raffles/new"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/raffles" for ::1 at 2021-03-14 15:22:03 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 24.2ms | Allocations: 10759)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 8.4ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.2ms | Allocations: 2049)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.4ms | Allocations: 16353)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:22:40 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 7.0ms | Allocations: 9649)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.4ms | Allocations: 1987)
+  Rendered layouts/_footer_fit.slim (Duration: 4.5ms | Allocations: 2049)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.3ms | Allocations: 15236)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:22:58 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 329.9ms | Allocations: 172241)
+Completed 500 Internal Server Error in 333ms (ActiveRecord: 0.3ms | Allocations: 173128)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_raffles_path' for #<#<Class:0x00007f6111048b60>:0x00007f611104e768>
+Did you mean?  new_raffle_path):
+     5: h1 Rifa
+     6: .schedule
+     7:   .body.selected-number 
+     8:     = form_for 'numbers', url: new_raffles_path do
+     9:     - 500.times.each do |number|
+    10:       - unless raffles.include? (number+1).to_s
+    11:         input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
+  
+app/views/raffles/index.slim:8
+Started GET "/raffles" for ::1 at 2021-03-14 15:23:06 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 20.2ms | Allocations: 9978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.2ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2052)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.4ms | Allocations: 15584)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:23:24 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 8.4ms | Allocations: 9961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.9ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2049)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.4ms | Allocations: 15549)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:23:52 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 7.1ms | Allocations: 9689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.4ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.6ms | Allocations: 2049)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.4ms | Allocations: 15277)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:24:53 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 9.1ms | Allocations: 9641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.6ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 2.6ms | Allocations: 2050)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.3ms | Allocations: 15222)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:25:00 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 3.7ms | Allocations: 3349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.9ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 5801)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:25:32 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.7ms | Allocations: 3342)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 5790)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:25:52 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 8.0ms | Allocations: 9641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.9ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.0ms | Allocations: 2049)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.3ms | Allocations: 15231)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:26:45 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  Rendered raffles/index.slim within layouts/rifa (Duration: 5.6ms | Allocations: 7194)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 8060)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check - raffles = []
+- @raffles.each do |raffle|
+  - raffles << raffle.number.to_s
+
+h1 Rifa
+.schedule
+  .body
+    = form_for 'numbers', url: new_raffle_path, {class: 'selected-number' }do
+      - 500.times.each do |number|
+        - unless raffles.include? (number+1).to_s
+          input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
+            label[for="#{number+1}"] = number+1
+        - else
+          .day.invalid
+            .float-end
+              span.shift-pill[style="background-color: green"] Vendido
+            p.day-number = number+1
+
+):
+1:    - raffles = []
+2:    - @raffles.each do |raffle|
+3:      - raffles << raffle.number.to_s
+4:    
+5:    h1 Rifa
+6:    .schedule
+7:      .body
+8:        = form_for 'numbers', url: new_raffle_path, {class: 'selected-number' }do
+9:          - 500.times.each do |number|
+10:            - unless raffles.include? (number+1).to_s
+11:              input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
+12:                label[for="#{number+1}"] = number+1
+13:            - else
+14:              .day.invalid
+15:                .float-end
+16:                  span.shift-pill[style="background-color: green"] Vendido
+17:                p.day-number = number+1
+  
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+app/views/raffles/index.slim:8: syntax error, unexpected do (for block), expecting =>
+app/views/raffles/index.slim:9: syntax error, unexpected do (for block), expecting end
+app/views/raffles/index.slim:18: syntax error, unexpected end, expecting end-of-input
+Started GET "/raffles" for ::1 at 2021-03-14 15:28:13 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 7.1ms | Allocations: 9728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.8ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 14.1ms | Allocations: 2049)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.3ms | Allocations: 15311)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:28:37 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 10.7ms | Allocations: 10262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.2ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 4.5ms | Allocations: 2049)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.4ms | Allocations: 15860)
+
+
+Started POST "/raffles/new" for ::1 at 2021-03-14 15:28:42 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/raffles/new"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /home/jerker/.rvm/gems/ruby-2.6.6/bin/rake:23)
+Started POST "/raffles/new" for ::1 at 2021-03-14 15:32:21 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/raffles/new"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/raffles" for ::1 at 2021-03-14 15:32:27 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 10.9ms | Allocations: 10211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.7ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.1ms | Allocations: 2049)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.3ms | Allocations: 15800)
+
+
+Started GET "/raffles/new?number%5B482%5D=on" for ::1 at 2021-03-14 15:32:30 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"482"=>"on"}}
+<ActionController::Parameters {"number"=>{"482"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 6.8ms | Allocations: 14169)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.9ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 18ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 16798)
+
+
+Started GET "/raffles/new?number%5B433%5D=on&number%5B482%5D=on" for ::1 at 2021-03-14 15:36:13 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"433"=>"on", "482"=>"on"}}
+<ActionController::Parameters {"number"=>{"433"=>"on", "482"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["number", "controller", "action"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.4ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.4ms | Allocations: 1772)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2774)
+
+
+Started GET "/raffles/new?number%5B433%5D=on&number%5B482%5D=on" for ::1 at 2021-03-14 15:36:33 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"433"=>"on", "482"=>"on"}}
+<ActionController::Parameters {"number"=>{"433"=>"on", "482"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["433", "482"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.3ms | Allocations: 1772)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2778)
+
+
+Started GET "/raffles/new?number%5B433%5D=on&number%5B482%5D=on" for ::1 at 2021-03-14 15:41:34 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"433"=>"on", "482"=>"on"}}
+<ActionController::Parameters {"number"=>{"433"=>"on", "482"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["433", "482"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.4ms | Allocations: 1772)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:41:56 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"LArNb8CdEoKe5CgEzrYR6y/QS3FmcuICYVgNXVABCsQCTqqyKGXY+HS4vyyAzRJX3Xa75aYFylnui/FTRr2WpA==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"433\", \"482\"]"}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1658)
+
+
+  
+NoMethodError (undefined method `lenght' for "[\"433\", \"482\"]":String
+Did you mean?  length):
+  
+app/controllers/raffles_controller.rb:19:in `create'
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:06 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:07 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:09 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:13 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:21 -0300
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:22 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:26 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:31 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:36 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/a679c7fb002a1f5a5478216c33e7fe56" for ::1 at 2021-03-14 15:42:39 -0300
+[31mUnpermitted parameter: :email[0m
+Started GET "/raffles" for ::1 at 2021-03-14 15:42:54 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 19.5ms | Allocations: 7978)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.2ms | Allocations: 1751)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 34ms (Views: 18.3ms | ActiveRecord: 7.2ms | Allocations: 13774)
+
+
+Started GET "/raffles/new?number%5B483%5D=on&number%5B493%5D=on" for ::1 at 2021-03-14 15:43:00 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"483"=>"on", "493"=>"on"}}
+<ActionController::Parameters {"number"=>{"483"=>"on", "493"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["483", "493"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 137)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.4ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2663)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:43:08 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"S/xWaacxO5EYiTRWTPpisRiDzFLEATsv972uaAbIncNluDG0T8nx6/LVo34CgWEN6iU8xgR2E3R4blJmEHQBow==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"483\", \"493\"]"}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1653)
+
+
+  
+NoMethodError (undefined method `lenght' for "[\"483\", \"493\"]":String
+Did you mean?  length):
+  
+app/controllers/raffles_controller.rb:19:in `create'
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:43:15 -0300
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:43:19 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:43:19 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:45:59 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:04 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:11 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:11 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:15 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:17 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/0191f95e2d4d7f6065532eef78ef79a2" for ::1 at 2021-03-14 15:46:20 -0300
+[31mUnpermitted parameter: :email[0m
+Started GET "/raffles" for ::1 at 2021-03-14 15:47:30 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 12.2ms | Allocations: 7939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 15.6ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 3.2ms | Allocations: 10697)
+
+
+Started GET "/raffles/new?number%5B491%5D=on&number%5B492%5D=on" for ::1 at 2021-03-14 15:47:34 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"491"=>"on", "492"=>"on"}}
+<ActionController::Parameters {"number"=>{"491"=>"on", "492"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["491", "492"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 1.3ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.6ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2658)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:47:42 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"wdf8JjkImT1dzuG3fT0fja/tgq9Ukna8cyJZ15kBNYPvk5v70fBTR7eSdp8zRhwxXUtyO5TlXuf88aXZj72p4w==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"491\", \"492\"]"}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1655)
+
+
+  
+NoMethodError (undefined method `lenght' for "[\"491\", \"492\"]":String
+Did you mean?  length):
+  
+app/controllers/raffles_controller.rb:20:in `create'
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:47:52 -0300
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:47:53 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:48:06 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:48:07 -0300
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:48:08 -0300
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:48:09 -0300
+[31mUnpermitted parameter: :email[0m
+Started PUT "/__web_console/repl_sessions/b6172cb6e529d8019147717fed42a0fe" for ::1 at 2021-03-14 15:48:15 -0300
+[31mUnpermitted parameter: :email[0m
+Started POST "/raffles" for ::1 at 2021-03-14 15:48:28 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"wdf8JjkImT1dzuG3fT0fja/tgq9Ukna8cyJZ15kBNYPvk5v70fBTR7eSdp8zRhwxXUtyO5TlXuf88aXZj72p4w==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"491\", \"492\"]"}}
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1550)
+
+
+  
+NoMethodError (undefined method `lenght' for ["491", "492"]:Array
+Did you mean?  length):
+  
+app/controllers/raffles_controller.rb:20:in `create'
+Started GET "/raffles" for ::1 at 2021-03-14 15:48:43 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 20.1ms | Allocations: 7939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.2ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 28ms (Views: 22.6ms | ActiveRecord: 3.6ms | Allocations: 10694)
+
+
+Started GET "/raffles/new?number%5B492%5D=on&number%5B493%5D=on" for ::1 at 2021-03-14 15:48:47 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"492"=>"on", "493"=>"on"}}
+<ActionController::Parameters {"number"=>{"492"=>"on", "493"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["492", "493"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.4ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2662)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:48:53 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"EWWYXqmUvXsGGJLwrvNedslJlWm0GkISVgC5XIMT44c/If+DQWx3AexEBdjgiF3KO+9l/XRtaknZ00VSla9/5w==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"492\", \"493\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1847)
+
+
+  
+NoMethodError (undefined method `each' for "[\"492\", \"493\"]":String):
+  
+app/controllers/raffles_controller.rb:21:in `create'
+Started GET "/raffles" for ::1 at 2021-03-14 15:49:11 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 19.2ms | Allocations: 7939)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.0ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 29ms (Views: 22.6ms | ActiveRecord: 5.2ms | Allocations: 10697)
+
+
+Started GET "/raffles/new?number%5B483%5D=on&number%5B484%5D=on" for ::1 at 2021-03-14 15:49:16 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"483"=>"on", "484"=>"on"}}
+<ActionController::Parameters {"number"=>{"483"=>"on", "484"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["483", "484"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 2664)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:49:22 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"9Yg3CPpECduHT7ufRYtXSjHbkYblmYOMGY7hCRnC/S/bzFDVErzDoW0TLLcL8FT2w31hEiXuq9eWXR0HD35hTw==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"483\", \"484\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[36mRaffle Create (1.2ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"483\", \"484\"]"], ["phone", "990681908"], ["number", 483], ["created_at", "2021-03-14 18:49:22.252776"], ["updated_at", "2021-03-14 18:49:22.252776"]]
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"483\", \"484\"]"], ["phone", "990681908"], ["number", 484], ["created_at", "2021-03-14 18:49:22.263110"], ["updated_at", "2021-03-14 18:49:22.263110"]]
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 21ms (ActiveRecord: 3.9ms | Allocations: 5839)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:49:22 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 5.1ms | Allocations: 3305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.0ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 5782)
+
+
+Started GET "/raffles/new?number%5B445%5D=on&number%5B456%5D=on&number%5B467%5D=on" for ::1 at 2021-03-14 15:49:36 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"445"=>"on", "456"=>"on", "467"=>"on"}}
+<ActionController::Parameters {"number"=>{"445"=>"on", "456"=>"on", "467"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["445", "456", "467"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.7ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.4ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 2678)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:49:40 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"lASvmmaVHFcXe/bclaDiiKgUBuFdmt0hmKjWkvZrkNS6QMhHjm3WLf0nYfTb2+E0WrL2dZ3t9XoXeyqc4NcMtA==", "raffle"=>{"name"=>"camila", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"445\", \"456\", \"467\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"445\", \"456\", \"467\"]"], ["phone", "990681908"], ["number", 445], ["created_at", "2021-03-14 18:49:40.599910"], ["updated_at", "2021-03-14 18:49:40.599910"]]
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"445\", \"456\", \"467\"]"], ["phone", "990681908"], ["number", 456], ["created_at", "2021-03-14 18:49:40.614398"], ["updated_at", "2021-03-14 18:49:40.614398"]]
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"445\", \"456\", \"467\"]"], ["phone", "990681908"], ["number", 467], ["created_at", "2021-03-14 18:49:40.622435"], ["updated_at", "2021-03-14 18:49:40.622435"]]
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:22:in `block in create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 34ms (ActiveRecord: 4.6ms | Allocations: 8476)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:49:40 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.1ms | Allocations: 3336)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.4ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.0ms | Allocations: 9)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms | Allocations: 5817)
+
+
+Started GET "/raffles/new?number%5B495%5D=on" for ::1 at 2021-03-14 15:49:46 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"495"=>"on"}}
+<ActionController::Parameters {"number"=>{"495"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["495"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 2640)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:49:51 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"Vr8Fq3uvNV8o5luPabx38N7GiJpVvaaA5K9r2nqT0CV4+2J2k1f/JcK6zKcnx3RMLGB4DpXKjttrfJfUbC9MRQ==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"495\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 0], ["created_at", "2021-03-14 18:49:51.625225"], ["updated_at", "2021-03-14 18:49:51.625225"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 8ms (ActiveRecord: 1.1ms | Allocations: 2949)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:49:51 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 6.1ms | Allocations: 3349)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 5822)
+
+
+  [1m[36mRaffle Load (0.7ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/raffles" for ::1 at 2021-03-14 15:50:56 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 15.2ms | Allocations: 8004)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.6ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 23ms (Views: 17.8ms | ActiveRecord: 3.6ms | Allocations: 10744)
+
+
+Started GET "/raffles/new?number%5B429%5D=on&number%5B437%5D=on&number%5B450%5D=on&number%5B452%5D=on&number%5B463%5D=on" for ::1 at 2021-03-14 15:51:02 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"429"=>"on", "437"=>"on", "450"=>"on", "452"=>"on", "463"=>"on"}}
+<ActionController::Parameters {"number"=>{"429"=>"on", "437"=>"on", "450"=>"on", "452"=>"on", "463"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["429", "437", "450", "452", "463"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 2685)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:51:10 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"MeCiXYc4OchO6Qm3VZ0zAMn4PRJs4BtuJvRpNwn8fLUfpMWAb8DzsqS1np8b5jC8O17NhqyXMzWpJ5U5H0Dg1Q==", "raffle"=>{"name"=>"margor", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"429\", \"437\", \"450\", \"452\", \"463\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"429\", \"437\", \"450\", \"452\", \"463\"]"], ["phone", "990681908"], ["number", 429], ["created_at", "2021-03-14 18:51:10.300659"], ["updated_at", "2021-03-14 18:51:10.300659"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"429\", \"437\", \"450\", \"452\", \"463\"]"], ["phone", "990681908"], ["number", 437], ["created_at", "2021-03-14 18:51:10.314064"], ["updated_at", "2021-03-14 18:51:10.314064"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"429\", \"437\", \"450\", \"452\", \"463\"]"], ["phone", "990681908"], ["number", 450], ["created_at", "2021-03-14 18:51:10.322437"], ["updated_at", "2021-03-14 18:51:10.322437"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"429\", \"437\", \"450\", \"452\", \"463\"]"], ["phone", "990681908"], ["number", 452], ["created_at", "2021-03-14 18:51:10.330442"], ["updated_at", "2021-03-14 18:51:10.330442"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"429\", \"437\", \"450\", \"452\", \"463\"]"], ["phone", "990681908"], ["number", 463], ["created_at", "2021-03-14 18:51:10.337100"], ["updated_at", "2021-03-14 18:51:10.337100"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 45ms (ActiveRecord: 9.4ms | Allocations: 13666)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:51:10 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 5.9ms | Allocations: 3399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 5886)
+
+
+Started GET "/raffles/new?number%5B496%5D=on" for ::1 at 2021-03-14 15:51:17 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"496"=>"on"}}
+<ActionController::Parameters {"number"=>{"496"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["496"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.9ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2654)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:51:22 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"mFbwjpo6ga9XzO+EPK8HeOumEYGkgXxH4+xbnbs64Yu2EpdTcsJL1b2QeKxy1ATEGQDhFWT2VBxsP6eTrYZ96w==", "raffle"=>{"name"=>"camila", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"496\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.9ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"496\"]"], ["phone", "990681908"], ["number", 496], ["created_at", "2021-03-14 18:51:22.855914"], ["updated_at", "2021-03-14 18:51:22.855914"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 14ms (ActiveRecord: 2.0ms | Allocations: 3099)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:51:22 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 5.3ms | Allocations: 3409)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.7ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 5895)
+
+
+Started GET "/raffles/new?number%5B497%5D=on" for ::1 at 2021-03-14 15:51:28 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"497"=>"on"}}
+<ActionController::Parameters {"number"=>{"497"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+["497"]
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.4ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.5ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 2642)
+
+
+Started POST "/raffles" for ::1 at 2021-03-14 15:51:34 -0300
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"NtUDTCSUSCkT8/794h9gZ7UFiplUuwZ6vuoVFEHNQIgYkWSRzGyCU/mvadWsZGPbR6N6DZTMLiExOekaV3Hc6A==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"[\"497\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "[\"497\"]"], ["phone", "990681908"], ["number", 497], ["created_at", "2021-03-14 18:51:34.209777"], ["updated_at", "2021-03-14 18:51:34.209777"]]
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:21:in `block in create'
+Redirected to http://localhost:3000/raffles
+Completed 302 Found in 12ms (ActiveRecord: 1.7ms | Allocations: 3102)
+
+
+Started GET "/raffles" for ::1 at 2021-03-14 15:51:34 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.9ms | Allocations: 3419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.7ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 5886)
+
+
