@@ -10,7 +10,6 @@ class RafflesController < ApplicationController
     params[:number].each do |num, sta|
       @number << num
     end
-    Rails.logger.info @number
     @number
 
   end

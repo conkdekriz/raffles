@@ -8,25 +8,31 @@
   .col-3
     h3 Asunto
   .col-9
-    input.form-control type="text" value="Rifa camila #{@number}"
+    input.form-control type="text" value="Rifa camila #{@number.join("")}"
 .row
   .col
     h1 Cuentas
 .row
-  .col-6
+  .col
     pre CAMILA IGNACIA CORNEJO ALARCON
       18.829.897-4
       Cuenta Vista
       Nº 0-070-58-76569-9
       Banco Santander
       camilaycamilo10@gmail.com
-  .col-6
+.row
+  .col
     pre CAMILA IGNACIA CORNEJO ALARCON
       18.829.897-4
       Cuenta Rut
       Nº 18829897
       Banco Estado
       camilaycamilo10@gmail.com
+.row
+  .col-6
+    h2 Valor a Pagar
+  .col-6
+    h1 = (@number.length)*1000
 = form_for 'raffle', url: raffles_path do
   .form-group
     label for="name" Nombre 
