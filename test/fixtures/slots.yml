@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room: one
+  number: 1
+  team: one
+
+two:
+  room: two
+  number: 1
+  team: two

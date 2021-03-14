@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  starts_at: 2020-06-06 19:39:28
+  slot_qty: 1
+  players_per_slot: 1
+  quick_code: MyString
+
+two:
+  name: MyString
+  starts_at: 2020-06-06 19:39:28
+  slot_qty: 1
+  players_per_slot: 1
+  quick_code: MyString

@@ -1,0 +1,15 @@
+= form_for 'price', url: prices_path do
+  .form-group
+    label for="price_name" Nombre Premio
+    input#price_name.form-control placeholder=("Nombre Premio") name="price[name]" type="text"
+  .form-group
+    label for="price_number" Cantidad Premio
+    input#price_name.form-control placeholder=("Cantidad Premio") name="price[number]" type="text"
+  .form-group
+    label for="price_rrss" RRSS
+    input#price_name.form-control placeholder=("RRSS") name="price[rrss]" type="text"
+  .form-group
+    label for="price_description" Descripción
+    input#price_name.form-control placeholder=("Descripción") name="price[description]" type="text"
+  
+  button.btn.btn-primary type="submit"  Agregar

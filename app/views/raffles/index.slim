@@ -1,0 +1,17 @@
+- raffles = []
+- @raffles.each do |raffle|
+  - raffles << raffle.number.to_s
+
+h1 Rifa
+.schedule
+  .body
+    - 500.times.each do |number|
+      - unless raffles.include? (number+1).to_s
+        = link_to new_raffle_path(number: number),  class: 'day' do
+          p.day-number = number+1
+          
+      - else
+        .day.invalid
+          .float-end
+            span.shift-pill[style="background-color: green"] Vendido
+          p.day-number = number+1

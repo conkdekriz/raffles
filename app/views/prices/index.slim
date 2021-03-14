@@ -1,0 +1,42 @@
+.row 
+  .col-6 
+    h1 Rifa Camila
+  .col-6.day
+    = link_to raffles_path do
+      h1 Comprar Número
+
+.row
+  - @prices.each do |price|
+    .col-sm-3
+      .card
+        .card-body.p-16to9
+          .card-body-content
+            h5.card-title = "#{price.number} #{price. name}"
+            p.card-text  = "#{price.description}"
+        .card-footer
+          - unless price.rrss == 'Anonimo'
+            a.btn.btn-primary href="#{price.rrss}" target="blank_"  RRSS 
+          - else
+            p Anonimo
+
+
+css:
+  .aspect-16to9 {
+  height: auto;
+  width: 100%;
+  }
+
+  .p-16to9 {
+    position: relative;
+    padding-bottom: 70%;
+    overflow: hidden;
+  }
+
+  .card-body-content {
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    overflow: hidden;
+  }

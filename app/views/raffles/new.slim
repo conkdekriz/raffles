@@ -1,0 +1,13 @@
+= form_for 'raffle', url: raffles_path do
+  .form-group
+    label for="name" Nombre 
+    input#price_name.form-control placeholder=("Nombre") name="raffle[name]" type="text"
+  .form-group
+    label for="phone" Telefono
+    input#price_name.form-control placeholder=("Telefono") name="raffle[phone]" type="text"
+  .form-group
+    label for="email" Email
+    input#price_name.form-control placeholder=("email") name="raffle[email]" type="text"
+  input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
+  
+  button.btn.btn-primary type="submit"  Agregar
