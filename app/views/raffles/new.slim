@@ -32,7 +32,7 @@
   .col-6
     h2 Valor a Pagar
   .col-6
-    h1 = (@number.length)*1000
+    h1 = number_to_currency((@number.length)*1000, precision: 0)
 = form_for 'raffle', url: raffles_path do
   .form-group
     label for="name" Nombre 

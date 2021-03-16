@@ -7018,3 +7018,241 @@ Processing by RafflesController#index as HTML
 Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.4ms | Allocations: 5878)
 
 
+Started GET "/" for 127.0.0.1 at 2021-03-15 21:24:07 -0300
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (2.1ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:22
+  Rendered prices/index.slim within layouts/rifa (Duration: 36.7ms | Allocations: 25396)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.6ms | Allocations: 1992)
+  Rendered layouts/_footer_fit.slim (Duration: 2.3ms | Allocations: 2056)
+Completed 200 OK in 56ms (Views: 38.4ms | ActiveRecord: 11.5ms | Allocations: 32034)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:24:10 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (1.1ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 22.8ms | Allocations: 15037)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.2ms | Allocations: 1767)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 46ms (Views: 21.1ms | ActiveRecord: 5.2ms | Allocations: 17952)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:25:39 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 9.0ms | Allocations: 10375)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 067ea534209d50308a28
+Version: webpack 4.43.0
+Time: 2208ms
+Built at: 03/15/2021 9:25:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5d6079ff091734135843.js    146 KiB  application  [emitted] [immutable]  application
+js/application-5d6079ff091734135843.js.map    161 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5d6079ff091734135843.js js/application-5d6079ff091734135843.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 9.55 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 5093.8ms | Allocations: 3416)
+  Rendered layouts/_footer_fit.slim (Duration: 2.4ms | Allocations: 2049)
+Completed 200 OK in 5110ms (Views: 5108.6ms | ActiveRecord: 0.5ms | Allocations: 17450)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:26:17 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.5ms | Allocations: 3420)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 77446d39523753fb9132
+Version: webpack 4.43.0
+Time: 1515ms
+Built at: 03/15/2021 9:26:21 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-dae4146411f07cdd0b40.js    146 KiB  application  [emitted] [immutable]  application
+js/application-dae4146411f07cdd0b40.js.map    161 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-dae4146411f07cdd0b40.js js/application-dae4146411f07cdd0b40.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 9.55 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3916.8ms | Allocations: 3222)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3923ms (Views: 3922.1ms | ActiveRecord: 0.3ms | Allocations: 7321)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:26:50 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.3ms | Allocations: 3405)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 95d94b7e894dfcf1ac57
+Version: webpack 4.43.0
+Time: 1528ms
+Built at: 03/15/2021 9:26:54 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-1fbc85a766427d43f68b.js    146 KiB  application  [emitted] [immutable]  application
+js/application-1fbc85a766427d43f68b.js.map    161 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-1fbc85a766427d43f68b.js js/application-1fbc85a766427d43f68b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 9.55 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3867.5ms | Allocations: 3218)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3874ms (Views: 3872.3ms | ActiveRecord: 0.4ms | Allocations: 7289)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:27:30 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 14.4ms | Allocations: 10381)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: ef5db009812c2562698f
+Version: webpack 4.43.0
+Time: 1454ms
+Built at: 03/15/2021 9:27:33 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f347b0a306a685faffbf.js    146 KiB  application  [emitted] [immutable]  application
+js/application-f347b0a306a685faffbf.js.map    161 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f347b0a306a685faffbf.js js/application-f347b0a306a685faffbf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 9.61 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3730.6ms | Allocations: 3385)
+  Rendered layouts/_footer_fit.slim (Duration: 3.1ms | Allocations: 2051)
+Completed 200 OK in 3752ms (Views: 3750.2ms | ActiveRecord: 0.4ms | Allocations: 17422)
+
+
+Started GET "/raffles" for 127.0.0.1 at 2021-03-15 21:27:50 -0300
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 4.0ms | Allocations: 3410)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 89b3c3f879843782c719
+Version: webpack 4.43.0
+Time: 1444ms
+Built at: 03/15/2021 9:27:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ce9f855f7c0ffc9ddd1d.js    146 KiB  application  [emitted] [immutable]  application
+js/application-ce9f855f7c0ffc9ddd1d.js.map    161 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ce9f855f7c0ffc9ddd1d.js js/application-ce9f855f7c0ffc9ddd1d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 230 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 9.61 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 3691.5ms | Allocations: 3221)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3697ms (Views: 3696.1ms | ActiveRecord: 0.3ms | Allocations: 7318)
+
+
+Started GET "/raffles/new?number%5B27%5D=on&number%5B38%5D=on" for 127.0.0.1 at 2021-03-15 21:28:05 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"27"=>"on", "38"=>"on"}}
+<ActionController::Parameters {"number"=>{"27"=>"on", "38"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 31.6ms | Allocations: 15768)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.2ms | Allocations: 1815)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 41ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 18422)
+
+
+Started GET "/raffles/new?number%5B27%5D=on&number%5B38%5D=on" for 127.0.0.1 at 2021-03-15 21:28:55 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"27"=>"on", "38"=>"on"}}
+<ActionController::Parameters {"number"=>{"27"=>"on", "38"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 59.5ms | Allocations: 26108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.7ms | Allocations: 1880)
+  Rendered layouts/_footer_fit.slim (Duration: 2.2ms | Allocations: 2052)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.0ms | Allocations: 31688)
+
+
+Started GET "/raffles/new?number%5B27%5D=on&number%5B30%5D=on&number%5B38%5D=on&number%5B49%5D=on" for 127.0.0.1 at 2021-03-15 21:29:18 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"27"=>"on", "30"=>"on", "38"=>"on", "49"=>"on"}}
+<ActionController::Parameters {"number"=>{"27"=>"on", "30"=>"on", "38"=>"on", "49"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 6.9ms | Allocations: 15858)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.5ms | Allocations: 1980)
+  Rendered layouts/_footer_fit.slim (Duration: 2.3ms | Allocations: 2049)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 21529)
+
+
+Started GET "/raffles/new?number%5B27%5D=on&number%5B30%5D=on&number%5B38%5D=on&number%5B49%5D=on" for 127.0.0.1 at 2021-03-15 21:31:42 -0300
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"27"=>"on", "30"=>"on", "38"=>"on", "49"=>"on"}}
+<ActionController::Parameters {"number"=>{"27"=>"on", "30"=>"on", "38"=>"on", "49"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 17.3ms | Allocations: 15854)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.7ms | Allocations: 1980)
+  Rendered layouts/_footer_fit.slim (Duration: 1.9ms | Allocations: 2052)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.0ms | Allocations: 21533)
+
+
