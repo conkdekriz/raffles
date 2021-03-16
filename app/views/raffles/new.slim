@@ -4,7 +4,8 @@
 .row
   .col-8
     p Para comprar debes realizar una tranferencia a cualquiera de estas cuentas con el asunto 
-.row
+    p Luego ingresa tus datos, y en menos de 24 horas te enviamos un mensaje para confirmar la compra.
+.row.p-5
   .col-3
     h3 Asunto
   .col-9
@@ -33,16 +34,21 @@
     h2 Valor a Pagar
   .col-6
     h1 = number_to_currency((@number.length)*1000, precision: 0)
-= form_for 'raffle', url: raffles_path do
-  .form-group
-    label for="name" Nombre 
-    input#price_name.form-control placeholder=("Nombre") name="raffle[name]" type="text"
-  .form-group
-    label for="phone" Telefono
-    input#price_name.form-control placeholder=("Telefono") name="raffle[phone]" type="text"
-  .form-group
-    label for="email" Email
-    input#price_name.form-control placeholder=("email") name="raffle[email]" type="text"
-  input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
-  
-  button.btn.btn-primary type="submit"  Agregar
+.row
+  .col
+    = form_for 'raffle', url: raffles_path do
+      .form-group
+        .form-control-label for="name" Nombre 
+        input#name.form-control placeholder=("Nombre") name="raffle[name]" type="text"
+      .form-group
+        .form-control-label for="phone" Telefono
+        input#phone.form-control placeholder=("Telefono") name="raffle[phone]" type="text"
+      .form-group
+        .form-control-label for="email" Email
+        input#email.form-control placeholder=("email") name="raffle[email]" type="text"
+      .form-group
+        .form-control-label for="comprobante" Comprobante
+        input#comprobante.form-control  name="raffle[comprobante]" type="file"
+      input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
+      
+      button.btn.btn-primary type="submit"  Agregar

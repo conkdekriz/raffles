@@ -16,11 +16,20 @@ class RafflesController < ApplicationController
   
   def create
     require 'json'
+    @file = ''
     JSON.parse(raffle_params(params)[:number]).each do |number|
+      uploaded_io = raffle_params(params)[:comprobante]
+
+      File.open(Rails.root.join('public', 'uploads', uploaded_io), 'wb') do |file|
+        @file = "/public/uploads/#{uploaded_io}"
+      end
+
       Raffle.create!(name: raffle_params(params)[:number], 
                     phone: raffle_params(params)[:phone],
-                    mail: raffle_params(params)[:mail],
-                    number: number)
+                    mail: raffle_params(params)[:email],
+                    number: number,
+                    file: @file)
+      
     end
     flash.alert = 'Ingresado con éxito'
     redirect_to raffles_path
@@ -32,8 +41,9 @@ class RafflesController < ApplicationController
     params.require(:raffle).permit(
       :name,
       :phone,
-      :mail,
-      :number
+      :email,
+      :number,
+      :comprobante
     )
   end
 end
