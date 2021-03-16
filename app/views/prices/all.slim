@@ -1,0 +1,13 @@
+
+.row.border
+  - @prices.each do |price|
+    .col-1
+      p = price.number
+    .col-2
+      p = price.name
+    .col-5
+      p = price.rrss
+    .col-3
+      p = price.description
+    .col-1
+      = link_to 'Editar', edit_price_path(price.id), class: 'btn btn-primary'

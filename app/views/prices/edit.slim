@@ -1,0 +1,15 @@
+= form_for 'price', url: price_path, method: :patch do
+  .form-group
+    label for="price_name" Nombre Premio
+    input#price_name.form-control value="#{@price&.name}" name="price[name]" type="text" 
+  .form-group
+    label for="price_number" Cantidad Premio
+    input#price_name.form-control value="#{@price&.number}" name="price[number]" type="text"
+  .form-group
+    label for="price_rrss" RRSS
+    input#price_name.form-control value="#{@price&.rrss}" name="price[rrss]" type="text"
+  .form-group
+    label for="price_description" Descripción
+    input#price_name.form-control value="#{@price&.description}" name="price[description]" type="text"
+  
+  button.btn.btn-primary type="submit"  Agregar
