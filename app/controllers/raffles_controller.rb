@@ -27,7 +27,7 @@ class RafflesController < ApplicationController
         @file = "/public/uploads/#{uploaded_io}"
       end
 
-      Raffle.create!(name: raffle_params(params)[:number], 
+      Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:email],
                     number: number,
