@@ -36,19 +36,19 @@
     h1 = number_to_currency((@number.length)*1000, precision: 0)
 .row
   .col
-    = form_for 'raffle', url: raffles_path do
+    = form_for 'raffle', url: raffles_path, :html => { :multipart => true }  do
       .form-group
         .form-control-label for="name" Nombre 
-        input#name.form-control placeholder=("Nombre") name="raffle[name]" type="text"
+        input#name.form-control placeholder=("Nombre") name="raffle[name]" required="true" type="text"
       .form-group
         .form-control-label for="phone" Telefono
-        input#phone.form-control placeholder=("Telefono") name="raffle[phone]" type="text"
+        input#phone.form-control placeholder=("Telefono") name="raffle[phone]" required="true" type="text"
       .form-group
         .form-control-label for="email" Email
         input#email.form-control placeholder=("email") name="raffle[email]" type="text"
       .form-group
         .form-control-label for="comprobante" Comprobante
-        input#comprobante.form-control  name="raffle[comprobante]" type="file"
+        input#comprobante.form-control  name="raffle[comprobante]" required="true" type="file"
       input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
       
       button.btn.btn-primary type="submit"  Agregar

@@ -13,5 +13,5 @@
       .form-group
         .form-control-label for="number" Número
         input#email.form-control value="#{@raffle&.number}"  name="raffle[number]" type="text"
-      p = "#{@raffle.file}"
+        img src="/#{@raffle.file}"
       button.btn.btn-primary type="submit"  Agregar

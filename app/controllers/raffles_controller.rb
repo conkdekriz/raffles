@@ -23,10 +23,10 @@ class RafflesController < ApplicationController
     @file = ''
     JSON.parse(raffle_params(params)[:number]).each do |number|
       uploaded_io = raffle_params(params)[:comprobante]
-
-      File.open(Rails.root.join('public', 'uploads', uploaded_io), 'wb') do |file|
-        @file = "/public/uploads/#{uploaded_io}"
-      end
+      File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
+        file.write(uploaded_io.read.force_encoding(Encoding::UTF_8))
+        @file = "uploads/#{uploaded_io.original_filename}"
+      end      
 
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
