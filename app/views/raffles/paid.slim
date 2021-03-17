@@ -7,5 +7,7 @@
       p = raffle.phone
     .col-3
       p = raffle.mail
-    .col-3
+    .col-2
       p = raffle.number
+    .col-1
+      = link_to 'Editar', edit_raffle_path(raffle.id), class: 'btn btn-primary'

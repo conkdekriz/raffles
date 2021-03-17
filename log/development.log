@@ -9641,3 +9641,518 @@ Processing by RafflesController#paid as HTML
 Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.6ms | Allocations: 10898)
 
 
+Started GET "/" for ::1 at 2021-03-16 21:35:27 -0300
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:22
+  Rendered prices/index.slim within layouts/rifa (Duration: 53.9ms | Allocations: 17526)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 10.8ms | Allocations: 1936)
+  Rendered layouts/_footer_fit.slim (Duration: 8.1ms | Allocations: 2049)
+Completed 200 OK in 81ms (Views: 68.9ms | ActiveRecord: 10.4ms | Allocations: 23444)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:35:31 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (0.8ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" DESC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 60.8ms | Allocations: 11286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.7ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 82ms (Views: 72.2ms | ActiveRecord: 0.8ms | Allocations: 14638)
+
+
+Started GET "/raffles/8/edit" for ::1 at 2021-03-16 21:35:33 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"8"}
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.0ms | Allocations: 55794)
+
+
+  
+NoMethodError (undefined method `set_raffles' for #<RafflesController:0x000055f8b82d8820>
+Did you mean?  set_raflles):
+  
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.1) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.1) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/raffles/8/edit" for ::1 at 2021-03-16 21:37:24 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 4.9ms | Allocations: 9752)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.7ms | Allocations: 1772)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 31ms (Views: 11.5ms | ActiveRecord: 3.7ms | Allocations: 19172)
+
+
+Started GET "/raffles/8/edit" for ::1 at 2021-03-16 21:37:59 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRaffle Load (0.8ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 6.3ms | Allocations: 2578)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 8.0ms | Allocations: 9509)
+
+
+  
+ActionView::Template::Error (undefined method `email' for #<Raffle:0x00007f5fb908b6d0>
+Did you mean?  mail
+               mail?
+               mail=):
+     9:         input#phone.form-control value="#{@raffle&.phone}"  name="raffle[phone]" type="text"
+    10:       .form-group
+    11:         .form-control-label for="email" Email
+    12:         input#email.form-control value="#{@raffle&.email}"  name="raffle[email]" type="text"
+    13:       .form-group
+    14:         .form-control-label for="number" Número
+    15:         input#email.form-control value="#{@raffle&.number}"  name="raffle[number]" type="text"
+  
+app/views/raffles/edit.slim:12
+app/views/raffles/edit.slim:3
+Started PUT "/__web_console/repl_sessions/d3bba0c63dfe2d731b433fe6327ac23a" for ::1 at 2021-03-16 21:38:27 -0300
+Started PUT "/__web_console/repl_sessions/d3bba0c63dfe2d731b433fe6327ac23a" for ::1 at 2021-03-16 21:38:28 -0300
+Started GET "/raffles/8/edit" for ::1 at 2021-03-16 21:38:36 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 4.4ms | Allocations: 9728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.1ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.1ms | Allocations: 2049)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.3ms | Allocations: 16037)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:38:39 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (4.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" DESC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 24.0ms | Allocations: 6562)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.5ms | Allocations: 1823)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 32ms (Views: 26.4ms | ActiveRecord: 4.3ms | Allocations: 9320)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:39:24 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" DESC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 4.4ms | Allocations: 2367)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.3ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 4977)
+
+
+Started GET "/raffles/20/edit" for ::1 at 2021-03-16 21:39:27 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mRaffle Load (4.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 0.6ms | Allocations: 184)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1820)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 29ms (Views: 18.0ms | ActiveRecord: 4.2ms | Allocations: 3358)
+
+
+Started GET "/raffles/20/edit" for ::1 at 2021-03-16 21:40:03 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 13.1ms | Allocations: 9681)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 9.6ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 6.2ms | Allocations: 2049)
+Completed 200 OK in 45ms (Views: 38.3ms | ActiveRecord: 0.4ms | Allocations: 15995)
+
+
+Started PATCH "/raffles/20" for ::1 at 2021-03-16 21:40:09 -0300
+Processing by RafflesController#update as HTML
+  Parameters: {"authenticity_token"=>"l8mQLYJCIzLInZUdfz/SHgXpFfPXRsTQEmKeIJw+mYy5jffwarrpSCLBAjUxRNGi90/lZxcx7IudsWIuioIF7A==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"497"}, "id"=>"20"}
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1927)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/raffles_controller.rb:46:in `update'
+Started GET "/raffles/20" for ::1 at 2021-03-16 21:40:39 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RafflesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PATCH "/raffles/20" for ::1 at 2021-03-16 21:40:43 -0300
+Processing by RafflesController#update as HTML
+  Parameters: {"authenticity_token"=>"l8mQLYJCIzLInZUdfz/SHgXpFfPXRsTQEmKeIJw+mYy5jffwarrpSCLBAjUxRNGi90/lZxcx7IudsWIuioIF7A==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"cristianfuentealbaa@gmail.com", "number"=>"497"}, "id"=>"20"}
+  [1m[36mRaffle Load (0.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.3ms | Allocations: 7909)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'email' for Raffle.):
+  
+app/controllers/raffles_controller.rb:46:in `update'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /home/jerker/.rvm/gems/ruby-2.6.6/bin/rake:23)
+Started GET "/raffles/20" for ::1 at 2021-03-16 21:42:17 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RafflesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-03-16 21:42:20 -0300
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.6ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:22
+  Rendered prices/index.slim within layouts/rifa (Duration: 42.4ms | Allocations: 17384)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.1ms | Allocations: 1936)
+  Rendered layouts/_footer_fit.slim (Duration: 5.4ms | Allocations: 2062)
+Completed 200 OK in 62ms (Views: 53.3ms | ActiveRecord: 7.4ms | Allocations: 23320)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:42:23 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" DESC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 18.6ms | Allocations: 11286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.9ms | Allocations: 1823)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 4.6ms | Allocations: 14920)
+
+
+Started GET "/raffles/20/edit" for ::1 at 2021-03-16 21:42:25 -0300
+Processing by RafflesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  Rendering raffles/edit.slim within layouts/rifa
+  Rendered raffles/edit.slim within layouts/rifa (Duration: 20.8ms | Allocations: 9672)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.5ms | Allocations: 1821)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 44ms (Views: 31.4ms | ActiveRecord: 0.3ms | Allocations: 13088)
+
+
+Started PATCH "/raffles/20" for ::1 at 2021-03-16 21:42:42 -0300
+Processing by RafflesController#update as HTML
+  Parameters: {"authenticity_token"=>"m1gMzIeXR3XCGV9xnuBw2qtX2FRNzxk9UQrvqzlnyOoV80lmu7sVagKMavBQ2h+1r5DVZIzN9fOtZ/RyPn8iAw==", "raffle"=>{"name"=>"Cristian Fuentealba", "phone"=>"990681908", "mail"=>"cristianfuentealbaa@gmail.com", "number"=>"497"}, "id"=>"20"}
+  [1m[36mRaffle Load (0.4ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  [1m[36mRaffle Load (0.3ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+  [1m[36mRaffle Update (2.2ms)[0m  [1m[33mUPDATE "raffles" SET "name" = $1, "mail" = $2, "updated_at" = $3 WHERE "raffles"."id" = $4[0m  [["name", "Cristian Fuentealba"], ["mail", "cristianfuentealbaa@gmail.com"], ["updated_at", "2021-03-17 00:42:42.701213"], ["id", 20]]
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 5.7ms | Allocations: 113227)
+
+
+  
+NameError (undefined local variable or method `paid_raffle_path' for #<RafflesController:0x000055f8b9f86b20>
+Did you mean?  paid_raffles_path):
+  
+app/controllers/raffles_controller.rb:47:in `update'
+Started GET "/raffles/20" for ::1 at 2021-03-16 21:42:54 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for RafflesController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started PATCH "/raffles/20" for ::1 at 2021-03-16 21:42:57 -0300
+Processing by RafflesController#update as HTML
+  Parameters: {"authenticity_token"=>"anzXZe5XAHQkMuati5PvvoUJBTNcL7sjlISu9gETTbFEOLC4Bq/KDs5ucYXF6OwCd6/1p5xYk3gbV1L4F6/R0Q==", "raffle"=>{"name"=>"Cristian Fuentealba", "phone"=>"990681908", "mail"=>"cristianfuentealbaa@gmail.com", "number"=>"497"}, "id"=>"20"}
+  [1m[36mRaffle Load (0.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:62:in `set_raffles'
+  [1m[36mRaffle Load (0.7ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" WHERE "raffles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/raffles_controller.rb:46:in `update'
+Redirected to http://localhost:3000/paid
+Completed 302 Found in 26ms (ActiveRecord: 6.9ms | Allocations: 7589)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:42:57 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" DESC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 4.0ms | Allocations: 2381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.7ms | Allocations: 1823)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 5154)
+
+
+Started GET "/paid" for ::1 at 2021-03-16 21:43:50 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[36mRaffle Load (0.5ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" ASC[0m
+  ↳ app/views/raffles/paid.slim:3
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 16.9ms | Allocations: 7159)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1774)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 28ms (Views: 21.2ms | ActiveRecord: 3.9ms | Allocations: 10614)
+
+

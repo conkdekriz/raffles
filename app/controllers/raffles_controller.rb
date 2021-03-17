@@ -1,4 +1,5 @@
 class RafflesController < ApplicationController 
+  before_action :set_raffles, only: %i[edit update]
   layout 'rifa'
   def index
     @raffles = Raffle.all
@@ -14,7 +15,7 @@ class RafflesController < ApplicationController
 
   end
   def paid
-    @raffles = Raffle.all.order(number: :desc)
+    @raffles = Raffle.all.order(number: :asc)
   end
   
   def create
@@ -29,7 +30,7 @@ class RafflesController < ApplicationController
 
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
-                    mail: raffle_params(params)[:email],
+                    mail: raffle_params(params)[:mail],
                     number: number,
                     file: @file)
       
@@ -38,15 +39,26 @@ class RafflesController < ApplicationController
     redirect_to raffles_path
   end
     
+  def edit;
+  end
+
+  def update
+    Raffle.find(@raffle.id).update(raffle_params(params))
+    redirect_to paid_raffles_path
+  end
+
   private
 
   def raffle_params(params)
     params.require(:raffle).permit(
       :name,
       :phone,
-      :email,
+      :mail,
       :number,
       :comprobante
     )
+  end
+  def set_raffles
+    @raffle = Raffle.find(params[:id])
   end
 end

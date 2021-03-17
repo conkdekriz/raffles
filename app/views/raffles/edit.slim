@@ -1,0 +1,16 @@
+.row
+  .col
+    = form_for 'raffle', url: raffle_path, method: :patch do
+      .form-group
+        .form-control-label for="name" Nombre 
+        input#name.form-control value="#{@raffle&.name}" name="raffle[name]" type="text"
+      .form-group
+        .form-control-label for="phone" Telefono
+        input#phone.form-control value="#{@raffle&.phone}"  name="raffle[phone]" type="text"
+      .form-group
+        .form-control-label for="email" Email
+        input#email.form-control value="#{@raffle&.mail}"  name="raffle[mail]" type="text"
+      .form-group
+        .form-control-label for="number" Número
+        input#email.form-control value="#{@raffle&.number}"  name="raffle[number]" type="text"
+      button.btn.btn-primary type="submit"  Agregar
