@@ -11074,3 +11074,17 @@ Processing by RafflesController#edit as HTML
 Completed 200 OK in 33ms (Views: 26.0ms | ActiveRecord: 0.5ms | Allocations: 13274)
 
 
+Started GET "/paid" for ::1 at 2021-03-16 22:39:27 -0300
+Processing by RafflesController#paid as HTML
+  Rendering raffles/paid.slim within layouts/rifa
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "raffles"[0m
+  ↳ app/views/raffles/paid.slim:3
+  [1m[36mRaffle Load (0.6ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."number" ASC[0m
+  ↳ app/views/raffles/paid.slim:5
+  Rendered raffles/paid.slim within layouts/rifa (Duration: 27.9ms | Allocations: 8271)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.2ms | Allocations: 1986)
+  Rendered layouts/_footer_fit.slim (Duration: 3.3ms | Allocations: 2049)
+Completed 200 OK in 47ms (Views: 39.7ms | ActiveRecord: 5.3ms | Allocations: 14028)
+
+
