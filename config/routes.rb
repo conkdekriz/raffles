@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     get 'all', to: 'prices#all', as: 'all_prices'
   resources :raffles
     get 'paid', to: 'raffles#paid', as: 'paid_raffles'
+    get 'gracias', to: 'raffles#gracias', as: 'gracias'
 
 
 end

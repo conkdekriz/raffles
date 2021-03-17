@@ -36,7 +36,7 @@ class RafflesController < ApplicationController
       
     end
     flash.alert = 'Ingresado con éxito'
-    redirect_to raffles_path
+    redirect_to gracias_path
   end
     
   def edit;
@@ -46,7 +46,8 @@ class RafflesController < ApplicationController
     Raffle.find(@raffle.id).update(raffle_params(params))
     redirect_to paid_raffles_path
   end
-
+  def gracias
+  end
   private
 
   def raffle_params(params)
