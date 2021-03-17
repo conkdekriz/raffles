@@ -13,6 +13,9 @@ class RafflesController < ApplicationController
     @number
 
   end
+  def paid
+    @raffles = Raffle.all.order(number: :desc)
+  end
   
   def create
     require 'json'

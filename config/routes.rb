@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   root to: "prices#index"
 
   resources :prices
-    get '/all', to: 'prices#all', as: 'all_prices'
+    get 'all', to: 'prices#all', as: 'all_prices'
   resources :raffles
+    get 'paid', to: 'raffles#paid', as: 'paid_raffles'
 
 
 end
