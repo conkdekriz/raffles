@@ -1,37 +1,40 @@
-.row.p-5
-  .col-6 
-    h1 GRAN RIFA GRAN
-  .col-6.day
-    = link_to raffles_path, class: 'btn btn-primary' do
+header.header
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.p-2.container
+    a.navbar-brand.p-3 href="#"  GRAN RIFA GRAN
+    = link_to raffles_path, class: 'btn btn-sm btn-primary' do
       h2 Comprar Número
-.row.p-3 
-  .col-10
+    
+.row.p-3.after-nav
+  .col
     p Rifa a beneficio de Camila, Camiloka, Tia Loca, La Secretaria o como ustedes la conozcan.
     p Lamentablemente a mediados de Febrero, Camila sufrío una crisis de dolor y otros síntomas que hacían pensar en que los malditos calculos habían vuelto.
     p Es por ello que luego de una hospitalización y varios controles, los doctores decidierón operar, pero debido al coronavirus y a la falta de camas en el sector público, recurrimos a otras opciones.
     p Luego de buscar, llegamos a una opción que se ajustaba de alguna forma al presupuesto, pero aun nos falta un extra que cubrir.
     p es por ello que esta rifa cuenta con 500 numeros, lo que ayudan a costear una parte de la operación.
-  .col-2
+.row.p-3
+  .col-3 
+    h1 Valor 
+  .col-9 
+    h1 $ 1.000
 
-
-.row
-  h1 Premios
-  p A continuación la lista de premios de esta rifa, muchos de los premios son donados por nuestros EMPRENDIAMIGOS, es por ello que de manera de agradecimiento agregamos un link a sus redes sociales.
-  p Siempre agradecemos que puedan seguirlos y regalar un like.
+.row.p-3.after-nav.mt-0
+  .col
+    h1 Premios
+    p A continuación la lista de premios de esta rifa, muchos de los premios son donados por nuestros EMPRENDIAMIGOS, es por ello que de manera de agradecimiento agregamos un link a sus redes sociales.
+    p Siempre agradecemos que puedan seguirlos y regalar un like.
 
   - @prices.each do |price|
-    .col-sm-3
-      .card
-        .card-body.p-16to9
-          .card-body-content
-            h5.card-title = "#{price.number} #{price.name}"
-            p.card-text  = "#{price.description}"
-        .card-footer
-          - anon = "%w[Anónimo Anonimo anónimo anonimo]"
-          - unless anon.include?(price.rrss)
-            a.btn.btn-primary href="#{price.rrss}" target="blank_"  RRSS 
-          - else
-            p Anónimo
+    - anon = "%w[Anónimo Anonimo anónimo anonimo]"
+    - unless anon.include?(price.rrss)
+      = link_to "#{price.rrss}", class: 'prices-row' do
+        span.shift-pill[style="background-color: green"] Ver Instagram
+        h3 = "#{price.number} #{price.name}"
+        p.card-text  = "#{price.description}"
+    - else
+      .prices-row
+        h3 = "#{price.number} #{price.name}"
+        p.card-text  = "#{price.description}"
+        
 
 
 css:

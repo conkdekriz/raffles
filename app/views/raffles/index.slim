@@ -2,8 +2,8 @@
 - @raffles.each do |raffle|
   - raffles << raffle.number.to_s
 header.header
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
-    a.navbar-brand.p-3 href="#"  Rifa camila
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.container
+    a.navbar-brand.p-3 href="#{root_path}"  Volver a Premios
     
 .row.after-nav
   .col
@@ -21,4 +21,4 @@ header.header
               .float-end
                 span.shift-pill[style="background-color: green"] Vendido
               p.day-number = number+1
-      button.btn.btn-primary.float  type="submit"  Comprar
+      button.btn.btn-secondary.float  type="submit"  Comprar

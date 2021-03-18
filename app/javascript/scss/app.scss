@@ -5,8 +5,8 @@
   --text-grey: black(0, 0%, 50%);
   --text-light: rgb(68, 57, 57);
   --text-dark: hsl(300, 79%, 4%);
-  --accent-color:hsl(323, 100%, 50%);
-  --hover-accent-color: hsl(323, 100%, 50%);
+  --accent-color:hsl(323, 83%, 84%);
+  --hover-accent-color: hsl(323, 100%, 76%);
   --active-accent-color: rgb(162, 130, 165);
   --bs-dark: var(--background-color);
 
@@ -59,6 +59,23 @@
   }
   .after-nav{
     margin-top: 100px;
+    p{
+      text-align: justify;
+      font-size: 15px;
+    }
+    .shift-pill {
+      border-radius: 50rem!important;
+      background-color: var(--accent-color);
+      display: inline-block;
+      padding: .35em .65em;
+      font-size: .75em;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--text-dark);
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+    }
   }
   .schedule {
     .header {
@@ -171,3 +188,24 @@
   }
 }
 
+.prices-row {
+  background-color: var(--active-accent-color);
+  padding: 1rem;
+  border-color: var(--active-accent-color);
+  color: var(--text-dark);
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top: 5px !important;
+  h3{
+    font-size: 40px;
+    color: white;
+  }
+  &:hover {
+    background-color: var(--hover-accent-color);
+    color:white;
+  }
+  
+}
+.margen-alto{
+  margin-top: 200px;
+}
