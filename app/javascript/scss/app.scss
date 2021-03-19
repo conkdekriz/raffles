@@ -13,7 +13,8 @@
   background-color: var(--background-color);
   color: var(--text-color);
   p{
-    font-size: 1.3rem;
+    font-size: 15px;
+    text-align: justify;
   }
   pre{
     font-size: 1rem;
@@ -208,4 +209,27 @@
 }
 .margen-alto{
   margin-top: 200px;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: red;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
 }
