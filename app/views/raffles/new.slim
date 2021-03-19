@@ -49,9 +49,10 @@ header.header
       .form-group
         .form-control-label for="email" Email
         input#email.form-control placeholder=("email") name="raffle[email]" type="text"
+      .form-group.p-2.mt-2
+        input.inputfile#comprobante  name="raffle[comprobante]" required="true" type="file"
+        label for="comprobante" Adjuntar comprobante
       .form-group
-        .label for="comprobante" Comprobante
-        input#comprobante  name="raffle[comprobante]" required="true" type="file"
-      input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
-      
-      button.btn.btn-primary.p-2.m-2 type="submit"  Agregar
+        input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
+      .form-group
+        button.form-control.btn.btn-primary.btn-lg.btn-block type="submit"  Validad Compra
