@@ -46,8 +46,16 @@ class RafflesController < ApplicationController
     Raffle.find(@raffle.id).update(raffle_params(params))
     redirect_to paid_raffles_path
   end
+
   def gracias
+
   end
+
+  def destroy
+    Raffle.delete(params["id"])
+    redirect_to paid_raffles_path
+  end
+
   private
 
   def raffle_params(params)
