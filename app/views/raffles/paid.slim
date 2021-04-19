@@ -1,17 +1,17 @@
 .row 
   .col 
     h1 = Raffle.all.count
-.row.border
-  - @raffles.each do |raffle|
-    .col-2
+- @raffles.each do |raffle|
+  .row.border
+    .col-3
       p[style='font-size: 12px'] = raffle.name
     .col-2
       p[style='font-size: 12px'] = raffle.phone
-    .col-2
+    .col-4
       p[style='font-size: 12px'] = raffle.mail
-    .col-2
+    .col-1
       p[style='font-size: 12px'] = raffle.number
-    .col-2
-      = link_to 'E', edit_raffle_path(raffle.id), class: 'btn btn-primary' 
-    .col-2
-      = link_to 'B', raffle_path(raffle.id) , :method => :delete, class: 'btn btn-secondary' 
+    .col-1
+      = link_to '✏️', edit_raffle_path(raffle.id), class: 'btn btn-primary' 
+    .col-1
+      = link_to '🗑️', raffle_path(raffle.id) , :method => :delete, class: 'btn btn-secondary' 
