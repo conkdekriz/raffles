@@ -23,15 +23,17 @@ class RafflesController < ApplicationController
     # nimrod.avispa.work
     require 'json'
     numbers = JSON.parse(raffle_params(params)[:number])
+    code = numbers.join("")
     numbers.each do |number|
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],
-                    number: number)
+                    number: number,
+                    code: code)
       
     end
     amount = ((numbers.count) * 1000).to_i
-    code = numbers.join("")
+    
     work = "Pago Rifa"
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
     payload = pay_payload(code, amount, work, detail)
@@ -48,8 +50,13 @@ class RafflesController < ApplicationController
     hydra.queue(request)
     hydra.run
 
-    processed_response = process request.response
-    puts processed_response
+    resp = JSON.parse(request.response.body).deep_symbolize_keys
+    redirect_to resp.dig(:data, :attributes, :url)
+  end
+
+  def response_paid
+    puts params.inspect
+    redirect_to paid_raffles_path
   end
     
   def edit;

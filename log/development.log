@@ -17575,3 +17575,1091 @@ Completed 404 Not Found in 719ms (ActiveRecord: 20.2ms | Allocations: 29444)
 AbstractController::ActionNotFound (The action '#<Typhoeus::Response:0x00007f8eb486c550>' could not be found for RafflesController):
   
 app/controllers/raffles_controller.rb:51:in `create'
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 00:46:52 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.8ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.7ms | Allocations: 1790)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3178)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 00:47:03 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"4rvfjl9B1kmIqsvaOIbzwxf35rHU8qfvSizVuuPEe+LfURJDqUaB+518y4628mtJXaZQFB2eEjKbF7v29DNYFQ==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.0ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 65], ["created_at", "2021-04-30 04:47:03.616633"], ["updated_at", "2021-04-30 04:47:03.616633"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 66], ["created_at", "2021-04-30 04:47:03.623497"], ["updated_at", "2021-04-30 04:47:03.623497"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 67], ["created_at", "2021-04-30 04:47:03.630936"], ["updated_at", "2021-04-30 04:47:03.630936"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 75], ["created_at", "2021-04-30 04:47:03.644435"], ["updated_at", "2021-04-30 04:47:03.644435"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 77], ["created_at", "2021-04-30 04:47:03.652714"], ["updated_at", "2021-04-30 04:47:03.652714"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 85], ["created_at", "2021-04-30 04:47:03.659510"], ["updated_at", "2021-04-30 04:47:03.659510"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 86], ["created_at", "2021-04-30 04:47:03.668630"], ["updated_at", "2021-04-30 04:47:03.668630"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 87], ["created_at", "2021-04-30 04:47:03.676601"], ["updated_at", "2021-04-30 04:47:03.676601"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=500 return_code=ok total_time=0.705831
+ETHON: performed MULTI
+Completed 404 Not Found in 815ms (ActiveRecord: 13.3ms | Allocations: 28818)
+
+
+  
+AbstractController::ActionNotFound (The action '#<Typhoeus::Response:0x000055578aa38270>' could not be found for RafflesController):
+  
+app/controllers/raffles_controller.rb:51:in `create'
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 00:52:31 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 1.5ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.4ms | Allocations: 1838)
+  Rendered layouts/_footer_fit.slim (Duration: 0.3ms | Allocations: 9)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3003)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 00:52:35 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"1/6stU2uVKoxJFPAhxexW8upbLYg7wjlcfCmVNPBaoLqFGF4u6kDGCTyU5QJYynRgfjaE+mDvTigy8gYxDZJdQ==", "raffle"=>{"name"=>"Mayra Palma", "phone"=>"aaaaaa", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 65], ["created_at", "2021-04-30 04:52:35.302277"], ["updated_at", "2021-04-30 04:52:35.302277"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 66], ["created_at", "2021-04-30 04:52:35.313955"], ["updated_at", "2021-04-30 04:52:35.313955"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 67], ["created_at", "2021-04-30 04:52:35.331434"], ["updated_at", "2021-04-30 04:52:35.331434"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 75], ["created_at", "2021-04-30 04:52:35.341812"], ["updated_at", "2021-04-30 04:52:35.341812"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 77], ["created_at", "2021-04-30 04:52:35.350948"], ["updated_at", "2021-04-30 04:52:35.350948"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 85], ["created_at", "2021-04-30 04:52:35.360263"], ["updated_at", "2021-04-30 04:52:35.360263"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 86], ["created_at", "2021-04-30 04:52:35.367620"], ["updated_at", "2021-04-30 04:52:35.367620"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 87], ["created_at", "2021-04-30 04:52:35.376374"], ["updated_at", "2021-04-30 04:52:35.376374"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=0.854789
+ETHON: performed MULTI
+Completed 404 Not Found in 941ms (ActiveRecord: 18.2ms | Allocations: 23675)
+
+
+  
+AbstractController::ActionNotFound (The action '#<Typhoeus::Response:0x00007f8eb4433650>' could not be found for RafflesController):
+  
+app/controllers/raffles_controller.rb:51:in `create'
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 00:56:08 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 0.9ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.6ms | Allocations: 1838)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3003)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 00:56:14 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"E2SJIA/5uOYN0KAtsg57/P1/j/IWUtznMjTs2NOGMkEujkTt+f7vVBgGoHk8euN2ty45V98+aTrjD4KUxHERtg==", "raffle"=>{"name"=>"cristian", "phone"=>"990681908", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.2ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 65], ["created_at", "2021-04-30 04:56:14.316167"], ["updated_at", "2021-04-30 04:56:14.316167"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 66], ["created_at", "2021-04-30 04:56:14.333870"], ["updated_at", "2021-04-30 04:56:14.333870"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 67], ["created_at", "2021-04-30 04:56:14.343214"], ["updated_at", "2021-04-30 04:56:14.343214"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 75], ["created_at", "2021-04-30 04:56:14.354272"], ["updated_at", "2021-04-30 04:56:14.354272"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 77], ["created_at", "2021-04-30 04:56:14.365228"], ["updated_at", "2021-04-30 04:56:14.365228"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 85], ["created_at", "2021-04-30 04:56:14.375952"], ["updated_at", "2021-04-30 04:56:14.375952"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 86], ["created_at", "2021-04-30 04:56:14.383431"], ["updated_at", "2021-04-30 04:56:14.383431"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "cristian"], ["phone", "990681908"], ["number", 87], ["created_at", "2021-04-30 04:56:14.388478"], ["updated_at", "2021-04-30 04:56:14.388478"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=3.196247
+ETHON: performed MULTI
+Completed 404 Not Found in 3288ms (ActiveRecord: 16.0ms | Allocations: 23480)
+
+
+  
+AbstractController::ActionNotFound (The action '#<Typhoeus::Response:0x00007f8eb4926a18>' could not be found for RafflesController):
+  
+app/controllers/raffles_controller.rb:51:in `create'
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 00:58:50 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 1.3ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1790)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 3175)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 00:58:56 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"o9jzwPMCUvLcbuF0TAhLqaxHM0RxoTAxDFgDNmLMTkmeMj4NBQUFQMm44SDCfNMj5haF4bjNhezdY216dTttvg==", "raffle"=>{"name"=>"margor", "phone"=>"aaaaaa", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 65], ["created_at", "2021-04-30 04:58:56.047682"], ["updated_at", "2021-04-30 04:58:56.047682"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 66], ["created_at", "2021-04-30 04:58:56.056325"], ["updated_at", "2021-04-30 04:58:56.056325"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 67], ["created_at", "2021-04-30 04:58:56.061832"], ["updated_at", "2021-04-30 04:58:56.061832"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 75], ["created_at", "2021-04-30 04:58:56.067519"], ["updated_at", "2021-04-30 04:58:56.067519"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 77], ["created_at", "2021-04-30 04:58:56.079505"], ["updated_at", "2021-04-30 04:58:56.079505"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.0ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 85], ["created_at", "2021-04-30 04:58:56.086639"], ["updated_at", "2021-04-30 04:58:56.086639"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 86], ["created_at", "2021-04-30 04:58:56.097127"], ["updated_at", "2021-04-30 04:58:56.097127"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (5.1ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "margor"], ["phone", "aaaaaa"], ["number", 87], ["created_at", "2021-04-30 04:58:56.105170"], ["updated_at", "2021-04-30 04:58:56.105170"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=1.583453
+ETHON: performed MULTI
+No template found for RafflesController#create, rendering head :no_content
+Completed 204 No Content in 1689ms (ActiveRecord: 31.4ms | Allocations: 28094)
+
+
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 00:59:24 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 1.3ms | Allocations: 273)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.3ms | Allocations: 1790)
+  Rendered layouts/_footer_fit.slim (Duration: 0.3ms | Allocations: 9)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3171)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 00:59:27 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"ubaB2Ius4P7+tPDsMVpTTQyLRCtaR36OmvoqOai57wGEXEwVfau3TOti8Li/LsvHRtryjpMry1NLwUR1v07M9g==", "raffle"=>{"name"=>"Mayra Palma", "phone"=>"aaaaaa", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 65], ["created_at", "2021-04-30 04:59:27.794058"], ["updated_at", "2021-04-30 04:59:27.794058"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 66], ["created_at", "2021-04-30 04:59:27.820941"], ["updated_at", "2021-04-30 04:59:27.820941"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 67], ["created_at", "2021-04-30 04:59:27.835617"], ["updated_at", "2021-04-30 04:59:27.835617"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 75], ["created_at", "2021-04-30 04:59:27.848114"], ["updated_at", "2021-04-30 04:59:27.848114"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 77], ["created_at", "2021-04-30 04:59:27.862436"], ["updated_at", "2021-04-30 04:59:27.862436"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 85], ["created_at", "2021-04-30 04:59:27.881794"], ["updated_at", "2021-04-30 04:59:27.881794"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 86], ["created_at", "2021-04-30 04:59:27.894908"], ["updated_at", "2021-04-30 04:59:27.894908"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 87], ["created_at", "2021-04-30 04:59:27.905048"], ["updated_at", "2021-04-30 04:59:27.905048"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=1.577262
+ETHON: performed MULTI
+No template found for RafflesController#create, rendering head :no_content
+Completed 204 No Content in 1734ms (ActiveRecord: 26.6ms | Allocations: 27966)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 01:03:57 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"ubaB2Ius4P7+tPDsMVpTTQyLRCtaR36OmvoqOai57wGEXEwVfau3TOti8Li/LsvHRtryjpMry1NLwUR1v07M9g==", "raffle"=>{"name"=>"Mayra Palma", "phone"=>"aaaaaa", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 65], ["created_at", "2021-04-30 05:03:57.091265"], ["updated_at", "2021-04-30 05:03:57.091265"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 66], ["created_at", "2021-04-30 05:03:57.100458"], ["updated_at", "2021-04-30 05:03:57.100458"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 67], ["created_at", "2021-04-30 05:03:57.111912"], ["updated_at", "2021-04-30 05:03:57.111912"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 75], ["created_at", "2021-04-30 05:03:57.121856"], ["updated_at", "2021-04-30 05:03:57.121856"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 77], ["created_at", "2021-04-30 05:03:57.132607"], ["updated_at", "2021-04-30 05:03:57.132607"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 85], ["created_at", "2021-04-30 05:03:57.140389"], ["updated_at", "2021-04-30 05:03:57.140389"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 86], ["created_at", "2021-04-30 05:03:57.149818"], ["updated_at", "2021-04-30 05:03:57.149818"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "aaaaaa"], ["number", 87], ["created_at", "2021-04-30 05:03:57.157473"], ["updated_at", "2021-04-30 05:03:57.157473"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=2.951169
+ETHON: performed MULTI
+No template found for RafflesController#create, rendering head :no_content
+Completed 204 No Content in 3031ms (ActiveRecord: 15.8ms | Allocations: 22644)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 01:04:16 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"ubaB2Ius4P7+tPDsMVpTTQyLRCtaR36OmvoqOai57wGEXEwVfau3TOti8Li/LsvHRtryjpMry1NLwUR1v07M9g==", "raffle"=>{"name"=>"Mayra Palma", "phone"=>"123123123", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.2ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 65], ["created_at", "2021-04-30 05:04:16.065929"], ["updated_at", "2021-04-30 05:04:16.065929"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 66], ["created_at", "2021-04-30 05:04:16.090343"], ["updated_at", "2021-04-30 05:04:16.090343"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.0ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 67], ["created_at", "2021-04-30 05:04:16.103980"], ["updated_at", "2021-04-30 05:04:16.103980"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (1.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 75], ["created_at", "2021-04-30 05:04:16.146834"], ["updated_at", "2021-04-30 05:04:16.146834"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 77], ["created_at", "2021-04-30 05:04:16.162881"], ["updated_at", "2021-04-30 05:04:16.162881"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.3ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 85], ["created_at", "2021-04-30 05:04:16.171539"], ["updated_at", "2021-04-30 05:04:16.171539"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 86], ["created_at", "2021-04-30 05:04:16.177787"], ["updated_at", "2021-04-30 05:04:16.177787"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Mayra Palma"], ["phone", "123123123"], ["number", 87], ["created_at", "2021-04-30 05:04:16.187477"], ["updated_at", "2021-04-30 05:04:16.187477"]]
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:27:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=5.938874
+ETHON: performed MULTI
+No template found for RafflesController#create, rendering head :no_content
+Completed 204 No Content in 6079ms (ActiveRecord: 19.6ms | Allocations: 22615)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6716556091890840300)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddCodeAndPayStatus (20210430144547)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.0ms)[0m  [1m[35mALTER TABLE "raffles" ADD "code" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "raffles" ADD "paid" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210430144547"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6716556091890840300)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /home/jerker/.rvm/gems/ruby-2.6.6/bin/rake:23)
+Started POST "/raffles" for ::1 at 2021-04-30 10:53:36 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"ubaB2Ius4P7+tPDsMVpTTQyLRCtaR36OmvoqOai57wGEXEwVfau3TOti8Li/LsvHRtryjpMry1NLwUR1v07M9g==", "raffle"=>{"name"=>"Mayra Palma", "phone"=>"123123123", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 6541)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'code' for Raffle.):
+  
+app/controllers/raffles_controller.rb:28:in `block in create'
+app/controllers/raffles_controller.rb:27:in `each'
+app/controllers/raffles_controller.rb:27:in `create'
+Started GET "/raffles/new?number%5B65%5D=on&number%5B66%5D=on&number%5B67%5D=on&number%5B75%5D=on&number%5B77%5D=on&number%5B85%5D=on&number%5B86%5D=on&number%5B87%5D=on" for ::1 at 2021-04-30 10:54:14 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}}
+<ActionController::Parameters {"number"=>{"65"=>"on", "66"=>"on", "67"=>"on", "75"=>"on", "77"=>"on", "85"=>"on", "86"=>"on", "87"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 122.5ms | Allocations: 29225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 8.3ms | Allocations: 2007)
+  Rendered layouts/_footer_fit.slim (Duration: 4.5ms | Allocations: 2060)
+Completed 200 OK in 166ms (Views: 153.7ms | ActiveRecord: 0.0ms | Allocations: 35945)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 10:54:20 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"3EBqmj99B+9BZ7VxPuxTFafyPtcJwZ+kBJ0jusf5513hqqdXyXpQXVSxtSWwmMuf7aOIcsCtKnnVpk320A7Eqg==", "raffle"=>{"name"=>"camila", "phone"=>"23123", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (11.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 65], ["created_at", "2021-04-30 14:54:21.090185"], ["updated_at", "2021-04-30 14:54:21.090185"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 66], ["created_at", "2021-04-30 14:54:21.153506"], ["updated_at", "2021-04-30 14:54:21.153506"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (2.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 67], ["created_at", "2021-04-30 14:54:21.191257"], ["updated_at", "2021-04-30 14:54:21.191257"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 75], ["created_at", "2021-04-30 14:54:21.231226"], ["updated_at", "2021-04-30 14:54:21.231226"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 77], ["created_at", "2021-04-30 14:54:21.255945"], ["updated_at", "2021-04-30 14:54:21.255945"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 85], ["created_at", "2021-04-30 14:54:21.291588"], ["updated_at", "2021-04-30 14:54:21.291588"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 86], ["created_at", "2021-04-30 14:54:21.323326"], ["updated_at", "2021-04-30 14:54:21.323326"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (2.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 87], ["created_at", "2021-04-30 14:54:21.350916"], ["updated_at", "2021-04-30 14:54:21.350916"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: Libcurl initialized
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=4.396332
+ETHON: performed MULTI
+No template found for RafflesController#create, rendering head :no_content
+Completed 204 No Content in 4813ms (ActiveRecord: 42.6ms | Allocations: 32207)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 10:55:08 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"3EBqmj99B+9BZ7VxPuxTFafyPtcJwZ+kBJ0jusf5513hqqdXyXpQXVSxtSWwmMuf7aOIcsCtKnnVpk320A7Eqg==", "raffle"=>{"name"=>"camila", "phone"=>"23123", "email"=>"", "number"=>"[\"65\", \"66\", \"67\", \"75\", \"77\", \"85\", \"86\", \"87\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 65], ["created_at", "2021-04-30 14:55:08.956881"], ["updated_at", "2021-04-30 14:55:08.956881"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 66], ["created_at", "2021-04-30 14:55:08.972273"], ["updated_at", "2021-04-30 14:55:08.972273"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.0ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 67], ["created_at", "2021-04-30 14:55:08.982714"], ["updated_at", "2021-04-30 14:55:08.982714"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 75], ["created_at", "2021-04-30 14:55:08.992466"], ["updated_at", "2021-04-30 14:55:08.992466"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 77], ["created_at", "2021-04-30 14:55:09.002793"], ["updated_at", "2021-04-30 14:55:09.002793"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 85], ["created_at", "2021-04-30 14:55:09.013799"], ["updated_at", "2021-04-30 14:55:09.013799"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.1ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 86], ["created_at", "2021-04-30 14:55:09.027137"], ["updated_at", "2021-04-30 14:55:09.027137"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.5ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila"], ["phone", "23123"], ["number", 87], ["created_at", "2021-04-30 14:55:09.038874"], ["updated_at", "2021-04-30 14:55:09.038874"], ["code", "6566677577858687"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6566677577858687","type":"PadpowCharge","attributes":{"amount_cents":8000,"work":"Pago Rifa","detail":"Pago por los siguientes números 65 66 67 75 77 85 86 87","reference_code":"6566677577858687"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=2.10292
+ETHON: performed MULTI
+Completed 500 Internal Server Error in 2249ms (ActiveRecord: 22.0ms | Allocations: 30382)
+
+
+  
+NoMethodError (undefined method `url' for #<Typhoeus::Response:0x0000560e3acc55f8>):
+  
+app/controllers/raffles_controller.rb:53:in `create'
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:16 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:17 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:20 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:21 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:47 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:50 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:51 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:56 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:55:57 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:03 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:05 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:12 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:13 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:16 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:18 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:36 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:38 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:42 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:56:42 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:58:47 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:58:56 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:00 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:00 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:01 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:06 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:10 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:46 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 10:59:56 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:00:11 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:07:04 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:07:04 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:07:14 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:07:15 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:09:15 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:09:17 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:09:17 -0400
+Started PUT "/__web_console/repl_sessions/82f7f3e4a2149181d801bf94aed43524" for ::1 at 2021-04-30 11:09:25 -0400
+Started GET "/raffles" for ::1 at 2021-04-30 11:12:58 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (3.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 77.3ms | Allocations: 23142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 12.3ms | Allocations: 1792)
+  Rendered layouts/_footer_fit.slim (Duration: 4.2ms | Allocations: 9)
+Completed 200 OK in 103ms (Views: 94.2ms | ActiveRecord: 3.2ms | Allocations: 26298)
+
+
+Started GET "/raffles/new?number%5B63%5D=on&number%5B64%5D=on" for ::1 at 2021-04-30 11:13:03 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"63"=>"on", "64"=>"on"}}
+<ActionController::Parameters {"number"=>{"63"=>"on", "64"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 3.4ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 11.4ms | Allocations: 1838)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 2982)
+
+
+Started POST "/raffles" for ::1 at 2021-04-30 11:13:10 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"pf1bBp3kAbonl1Grr21N0ccFsyg5p3S/TlkG4QJEMIyYF5bLa+NWCDJBUf8hGdVbjVQFjfDLwWKfYmitFbMTew==", "raffle"=>{"name"=>"camila bravo", "phone"=>"990681908", "email"=>"", "number"=>"[\"63\", \"64\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (3.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 63], ["created_at", "2021-04-30 15:13:10.206295"], ["updated_at", "2021-04-30 15:13:10.206295"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.7ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 64], ["created_at", "2021-04-30 15:13:10.253453"], ["updated_at", "2021-04-30 15:13:10.253453"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6364","type":"PadpowCharge","attributes":{"amount_cents":2000,"work":"Pago Rifa","detail":"Pago por los siguientes números 63 64","reference_code":"6364"}}}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 8.7ms | Allocations: 6769)
+
+
+  
+NoMethodError (undefined method `body' for nil:NilClass):
+  
+app/controllers/raffles_controller.rb:49:in `create'
+Started POST "/raffles" for ::1 at 2021-04-30 11:14:08 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"pf1bBp3kAbonl1Grr21N0ccFsyg5p3S/TlkG4QJEMIyYF5bLa+NWCDJBUf8hGdVbjVQFjfDLwWKfYmitFbMTew==", "raffle"=>{"name"=>"camila bravo", "phone"=>"990681908", "email"=>"", "number"=>"[\"63\", \"64\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.0ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 63], ["created_at", "2021-04-30 15:14:08.955021"], ["updated_at", "2021-04-30 15:14:08.955021"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 64], ["created_at", "2021-04-30 15:14:08.968827"], ["updated_at", "2021-04-30 15:14:08.968827"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6364","type":"PadpowCharge","attributes":{"amount_cents":2000,"work":"Pago Rifa","detail":"Pago por los siguientes números 63 64","reference_code":"6364"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=0.498234
+ETHON: performed MULTI
+Redirected to 
+Completed 500 Internal Server Error in 567ms (ActiveRecord: 21.3ms | Allocations: 13833)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/raffles_controller.rb:54:in `create'
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:15 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:16 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:22 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:22 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:36 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:36 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:46 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:51 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:14:54 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:05 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:07 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:20 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:21 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:25 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:36 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:39 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:41 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:44 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:45 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:15:56 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:16:07 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:16:16 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:16:41 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:16:42 -0400
+Started PUT "/__web_console/repl_sessions/eb0b9b510ce10ed8b5c5b9259fc70976" for ::1 at 2021-04-30 11:16:46 -0400
+Started POST "/raffles" for ::1 at 2021-04-30 11:17:13 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"pf1bBp3kAbonl1Grr21N0ccFsyg5p3S/TlkG4QJEMIyYF5bLa+NWCDJBUf8hGdVbjVQFjfDLwWKfYmitFbMTew==", "raffle"=>{"name"=>"camila bravo", "phone"=>"990681908", "email"=>"", "number"=>"[\"63\", \"64\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.6ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 63], ["created_at", "2021-04-30 15:17:14.202621"], ["updated_at", "2021-04-30 15:17:14.202621"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (0.4ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 64], ["created_at", "2021-04-30 15:17:14.213880"], ["updated_at", "2021-04-30 15:17:14.213880"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6364","type":"PadpowCharge","attributes":{"amount_cents":2000,"work":"Pago Rifa","detail":"Pago por los siguientes números 63 64","reference_code":"6364"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=2.423054
+ETHON: performed MULTI
+Redirected to 
+Completed 500 Internal Server Error in 2480ms (ActiveRecord: 14.6ms | Allocations: 13794)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/raffles_controller.rb:54:in `create'
+Started PUT "/__web_console/repl_sessions/a1e61d29107b44f17d13c736618a0053" for ::1 at 2021-04-30 11:17:22 -0400
+Started PUT "/__web_console/repl_sessions/a1e61d29107b44f17d13c736618a0053" for ::1 at 2021-04-30 11:17:23 -0400
+Started POST "/raffles" for ::1 at 2021-04-30 11:17:39 -0400
+Processing by RafflesController#create as HTML
+  Parameters: {"authenticity_token"=>"pf1bBp3kAbonl1Grr21N0ccFsyg5p3S/TlkG4QJEMIyYF5bLa+NWCDJBUf8hGdVbjVQFjfDLwWKfYmitFbMTew==", "raffle"=>{"name"=>"camila bravo", "phone"=>"990681908", "email"=>"", "number"=>"[\"63\", \"64\"]"}}
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.9ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 63], ["created_at", "2021-04-30 15:17:40.236193"], ["updated_at", "2021-04-30 15:17:40.236193"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+[31mUnpermitted parameter: :email[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[36mRaffle Create (1.8ms)[0m  [1m[32mINSERT INTO "raffles" ("name", "phone", "number", "created_at", "updated_at", "code") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "camila bravo"], ["phone", "990681908"], ["number", 64], ["created_at", "2021-04-30 15:17:40.257500"], ["updated_at", "2021-04-30 15:17:40.257500"], ["code", "6364"]]
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/raffles_controller.rb:28:in `block in create'
+{"data":{"id":"6364","type":"PadpowCharge","attributes":{"amount_cents":2000,"work":"Pago Rifa","detail":"Pago por los siguientes números 63 64","reference_code":"6364"}}}
+ETHON: started MULTI
+ETHON:         performed EASY effective_url=http://nimrod.avispa.work/api/v1/charges response_code=200 return_code=ok total_time=3.757738
+ETHON: performed MULTI
+Redirected to http://nimrod.avispa.work/charges/6364
+Completed 302 Found in 3879ms (ActiveRecord: 22.7ms | Allocations: 13490)
+
+
