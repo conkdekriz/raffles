@@ -1,5 +1,7 @@
 class RafflesController < ApplicationController 
   before_action :set_raffles, only: %i[edit update]
+  protect_from_forgery with: :null_session
+  
   layout 'rifa'
   def index
     @raffles = Raffle.all
