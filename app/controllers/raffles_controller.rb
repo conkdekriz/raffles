@@ -19,24 +19,32 @@ class RafflesController < ApplicationController
   end
   
   def create
+    url = 'http://nimrod.avispa.work/api/v1/charges'
+    # nimrod.avispa.work
     require 'json'
-    @file = ''
-    JSON.parse(raffle_params(params)[:number]).each do |number|
-      uploaded_io = raffle_params(params)[:comprobante]
-      File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'w') do |file|
-        file.write(uploaded_io.read.force_encoding(Encoding::UTF_8))
-        @file = "uploads/#{uploaded_io.original_filename}"
-      end      
-
+    numbers = JSON.parse(raffle_params(params)[:number])
+    numbers.each do |number|
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],
-                    number: number,
-                    file: @file)
+                    number: number)
       
     end
-    flash.alert = 'Ingresado con éxito'
-    redirect_to gracias_path
+    amount = ((numbers.count) * 1000).to_i
+    code = numbers.join("")
+    work = "Pago Rifa"
+    detail = "Pago por los siguientes números #{numbers.join(" ")}"
+    payload = pay_payload(code, amount, work, detail)
+    headers = {
+      'X-API-TOKEN' => '188298974174853428',
+      'Content-Type' => 'application/json'
+    }.freeze
+    processed_payload = Oj.dump(payload.deep_stringify_keys)
+    Rails.logger.debug processed_payload
+    request = Typhoeus::Request.new(url, method: :post,
+                                    body: processed_payload, headers: headers,
+                                    params: params)
+    puts request.inspect
   end
     
   def edit;
@@ -70,4 +78,21 @@ class RafflesController < ApplicationController
   def set_raffles
     @raffle = Raffle.find(params[:id])
   end
+  def pay_payload(code,amount,work,detail)
+    payload =
+      {
+        data: {
+          id: code,
+          type: "PadpowCharge",
+          attributes: {
+            amount_cents: amount,
+            work: work,
+            detail: detail,
+            reference_code: code
+          }
+        }
+      }
+    payload
+  end
+
 end

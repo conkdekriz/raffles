@@ -24,6 +24,9 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'cloudinary'
 
+gem 'oj'
+gem 'typhoeus'
+
 gem 'devise'
 gem 'rolify'
 

@@ -8,3 +8,5 @@ Turbolinks.start()
 ActiveStorage.start()
 
 require("../scss/app.scss")
+
+import 'js/raffle/count_checkbox'
