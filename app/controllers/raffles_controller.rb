@@ -36,7 +36,7 @@ class RafflesController < ApplicationController
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
     payload = pay_payload(code, amount, work, detail)
     headers = {
-      'X-API-TOKEN' => '188298974174853428',
+      'X-API-TOKEN' => '33a2faaf-7406-4742-a469-b8d5a09c6673',
       'Content-Type' => 'application/json'
     }.freeze
     processed_payload = Oj.dump(payload.deep_stringify_keys)
@@ -44,7 +44,12 @@ class RafflesController < ApplicationController
     request = Typhoeus::Request.new(url, method: :post,
                                     body: processed_payload, headers: headers,
                                     params: params)
-    puts request.inspect
+    hydra = Typhoeus::Hydra.hydra
+    hydra.queue(request)
+    hydra.run
+
+    processed_response = process request.response
+    puts processed_response
   end
     
   def edit;
@@ -94,5 +99,5 @@ class RafflesController < ApplicationController
       }
     payload
   end
-
+  
 end
