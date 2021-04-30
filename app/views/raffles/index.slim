@@ -12,13 +12,11 @@ header.header
   .schedule
     = form_for 'numbers', url: new_raffle_path, method: :get do
       .body.selected-number 
-        - 500.times.each do |number|
+        - 700.times.each do |number|
           - unless raffles.include? (number+1).to_s
             input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
               label[for="#{number+1}"] = number+1
           - else
             .day.invalid
-              .float-end
-                span.shift-pill[style="background-color: green"] Vendido
               p.day-number = number+1
       button.btn.btn-secondary.float  type="submit"  Comprar

@@ -1,28 +1,19 @@
 header.header
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.p-2.container
-    a.navbar-brand.p-2 href="#" Rifa Camila
+  nav.navbar.navbar-expand-lg.navbar-light.bg-dark.fixed-top.p-2.container
+    a.navbar-brand.p-2.text-white href="#" MI RIFA
     = link_to raffles_path, class: 'btn btn-sm btn-primary' do
       h3 Comprar Número
-    
-.row.p-3.after-nav
-  .col
-    p Rifa a beneficio de Camila, Camiloka, Tia Loca, La Secretaria o como ustedes la conozcan.
-    p Lamentablemente a mediados de Febrero, Camila sufrío una crisis de dolor y otros síntomas que hacían pensar en que los malditos calculos habían vuelto.
-    p Es por ello que luego de una hospitalización y varios controles, los doctores decidierón operar, pero debido al coronavirus y a la falta de camas en el sector público, recurrimos a otras opciones.
-    p Luego de buscar, llegamos a una opción que se ajustaba de alguna forma al presupuesto, pero aun nos falta un extra que cubrir.
-    p es por ello que esta rifa cuenta con 500 numeros, lo que ayudan a costear una parte de la operación.
-.row.p-3
-  .col-3 
-    h1 Valor 
-  .col-9 
-    h1 $ 1.000
+h1 Rifa
+.row.after-nav.description
+  .col-sm
+    = image_tag("rifaportada.png", class: 'img-fluid p-2')
+  .col-sm
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et fermentum nisl. Duis mauris diam, feugiat quis eros ut, ornare sodales justo. Nam vitae lectus interdum lorem blandit feugiat. Donec sed justo iaculis, scelerisque nunc vel, dignissim tellus. Morbi eget blandit massa, ac imperdiet orci. Maecenas bibendum tellus non libero posuere, luctus auctor nisl tristique. Etiam auctor sit amet dolor eu euismod. Sed pharetra velit augue, vel tempor risus lobortis id. Suspendisse blandit neque ultricies dapibus elementum.
+
 
 .row.p-3.after-nav.mt-0
   .col
     h1 Premios
-    p A continuación la lista de premios de esta rifa, muchos de los premios son donados por nuestros EMPRENDIAMIGOS, es por ello que de manera de agradecimiento agregamos un link a sus redes sociales.
-    p Siempre agradecemos que puedan seguirlos y regalar un like.
-
   - @prices.each do |price|
     - anon = "%w[Anónimo Anonimo anónimo anonimo]"
     - unless anon.include?(price.rrss)
@@ -56,4 +47,13 @@ css:
     right: 1rem;
     left: 1rem;
     overflow: hidden;
+  }
+  .description{
+    padding: 3px;
+    border-radius: 15px;
+    border: 1px solid black;
+  }
+  .imagen-principal{
+    max-width: 400px;
+    height: auto;
   }
