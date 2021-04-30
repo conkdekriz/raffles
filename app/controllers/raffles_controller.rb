@@ -1,7 +1,7 @@
 class RafflesController < ApplicationController 
   before_action :set_raffles, only: %i[edit update]
   protect_from_forgery with: :null_session
-  
+
   layout 'rifa'
   def index
     @raffles = Raffle.all
@@ -58,8 +58,29 @@ class RafflesController < ApplicationController
 
   def response_paid
     puts params.inspect
-    redirect_to paid_raffles_path
+    resp = JSON.parse(params.inspect).deep_symbolize_keys
+    raffles = Raffle.where(code: resp.dig(:data, :id))
+    raffles.each do |raffle|
+      raffle.update('paid': resp.dig(:data, :attributes, :status))
+    end
+    redirect_to raffles_path
   end
+  # Parameters: 
+  # {
+  #   "data"=>
+  #     {"id"=>"6364", "type"=>"Payment", 
+  #   "attributes"=>
+  #     {"title"=>"Pago Rifa", 
+  #       "detail"=>"Pago por los siguientes números 63 64", 
+  #       "total_amount"=>"2000", 
+  #       "purchase_order"=>"6364", 
+  #       "pay_date"=>"2021-04-30 15:18:21 UTC", 
+  #       "card_number"=>"XXXX-XXXX-XXXX-7763", 
+  #       "shares_number"=>"0", 
+  #       "authorization_code"=>"1415", 
+  #       "payment_method_name"=>"Venta Débito.", 
+  #       "status"=>"completed"}}, 
+  #     "id"=>"6364"}
     
   def edit;
   end
