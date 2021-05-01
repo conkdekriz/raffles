@@ -24,8 +24,9 @@ class RafflesController < ApplicationController
     # nimrod.avispa.work
     require 'json'
     numbers = JSON.parse(raffle_params(params)[:number])
-    code = numbers.join("")
+    code = "rifacamila#{numbers.join("")}"
     numbers.each do |number|
+      redirect_to raffles_path unless Raffle.find_by(number: number).nil?
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],

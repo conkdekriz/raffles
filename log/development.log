@@ -20166,3 +20166,63 @@ Redirected to http://nimrod.avispa.work/charges/101102103104105
 Completed 302 Found in 582ms (ActiveRecord: 9.5ms | Allocations: 14412)
 
 
+Started GET "/" for ::1 at 2021-04-30 23:16:36 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.6ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 32.3ms | Allocations: 7280)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 11.5ms | Allocations: 1796)
+  Rendered layouts/_footer_fit.slim (Duration: 0.6ms | Allocations: 9)
+Completed 200 OK in 50ms (Views: 37.1ms | ActiveRecord: 9.8ms | Allocations: 10014)
+
+
+Started GET "/raffles" for ::1 at 2021-04-30 23:16:37 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (1.9ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 26.2ms | Allocations: 13095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.6ms | Allocations: 1792)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 1.9ms | Allocations: 15920)
+
+
+Started GET "/raffles/new?number%5B49%5D=on&number%5B59%5D=on&number%5B70%5D=on" for ::1 at 2021-04-30 23:16:41 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}}
+<ActionController::Parameters {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 4.1ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.4ms | Allocations: 1838)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 2791)
+
+
+Started GET "/raffles/new?number%5B49%5D=on&number%5B59%5D=on&number%5B70%5D=on" for ::1 at 2021-04-30 23:17:24 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}}
+<ActionController::Parameters {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 7.5ms | Allocations: 12541)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.0ms | Allocations: 2004)
+  Rendered layouts/_footer_fit.slim (Duration: 2.9ms | Allocations: 2049)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 18213)
+
+
+Started GET "/raffles/new?number%5B49%5D=on&number%5B59%5D=on&number%5B70%5D=on" for ::1 at 2021-04-30 23:17:44 -0400
+Processing by RafflesController#new as HTML
+  Parameters: {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}}
+<ActionController::Parameters {"number"=>{"49"=>"on", "59"=>"on", "70"=>"on"}, "controller"=>"raffles", "action"=>"new"} permitted: false>
+  Rendering raffles/new.slim within layouts/rifa
+  Rendered raffles/new.slim within layouts/rifa (Duration: 6.7ms | Allocations: 12579)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.2ms | Allocations: 2004)
+  Rendered layouts/_footer_fit.slim (Duration: 3.4ms | Allocations: 2049)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 18249)
+
+
