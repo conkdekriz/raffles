@@ -63,7 +63,7 @@
     border-radius: 3rem;
   }
   .after-nav{
-    margin: 5rem;
+    margin: 5rem 2rem 2rem 2rem;
     p{
       text-align: justify;
       font-size: 15px;
@@ -194,20 +194,15 @@
 }
 
 .prices-row {
-  background-color: var(--active-accent-color);
   padding: 1rem;
-  border-color: var(--active-accent-color);
   color: var(--text-dark);
   text-decoration: none;
   border-radius: 15px;
   margin-top: 5px !important;
-  h3{
-    font-size: 40px;
-    color: white;
-  }
+  border: 2px solid black;
+  color: black;
   &:hover {
-    background-color: var(--hover-accent-color);
-    color:white;
+    color:rgb(51, 46, 46);
   }
   
 }

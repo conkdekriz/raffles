@@ -12,18 +12,18 @@ header.header
     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et fermentum nisl. Duis mauris diam, feugiat quis eros ut, ornare sodales justo. Nam vitae lectus interdum lorem blandit feugiat. Donec sed justo iaculis, scelerisque nunc vel, dignissim tellus. Morbi eget blandit massa, ac imperdiet orci. Maecenas bibendum tellus non libero posuere, luctus auctor nisl tristique. Etiam auctor sit amet dolor eu euismod. Sed pharetra velit augue, vel tempor risus lobortis id. Suspendisse blandit neque ultricies dapibus elementum.
     h1 Valor : $1000 cada número
 
-.row.after-nav.description
-  .col
+.row.after-nav.center
+  .col-10
     h1 Premios
   - @prices.each do |price|
     - anon = "%w[Anónimo Anonimo anónimo anonimo]"
     - unless anon.include?(price.rrss)
-      = link_to "#{price.rrss}", class: 'prices-row' do
-        span.shift-pill[style="background-color: green"] Ver Instagram
+      = link_to "#{price.rrss}", class: 'col-5 prices-row m-2' do
+        span.shift-pill[style="background-color: black; color:white"] Ver Instagram
         h3 = "#{price.number} #{price.name}"
         p.card-text  = "#{price.description}"
     - else
-      .prices-row
+      .prices-row.col-5.m-2 
         h3 = "#{price.number} #{price.name}"
         p.card-text  = "#{price.description}"
         
