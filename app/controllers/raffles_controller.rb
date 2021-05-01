@@ -1,6 +1,5 @@
 class RafflesController < ApplicationController 
   before_action :set_raffles, only: %i[edit update]
-  protect_from_forgery with: :null_session
 
   layout 'rifa'
   def index
@@ -38,33 +37,29 @@ class RafflesController < ApplicationController
     
     work = "Pago Rifa"
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
-    payload = pay_payload(code, amount, work, detail)
+    url_response = "http://raffles-app.herokuapp.com/raffles/#{code}/response_paid"
+    payload = pay_payload(code, amount, work, detail, url_response)
     headers = {
       'X-API-TOKEN' => '33a2faaf-7406-4742-a469-b8d5a09c6673',
       'Content-Type' => 'application/json'
     }.freeze
     processed_payload = Oj.dump(payload.deep_stringify_keys)
     Rails.logger.debug processed_payload
-    request = Typhoeus::Request.new(url, method: :post,
-                                    body: processed_payload, headers: headers,
-                                    params: params)
-    hydra = Typhoeus::Hydra.hydra
-    hydra.queue(request)
-    hydra.run
+   
+    request = Typhoeus.post(url, body: processed_payload, headers: headers)
 
-    resp = JSON.parse(request.response.body).deep_symbolize_keys
+    resp = JSON.parse(request.body).deep_symbolize_keys
     redirect_to resp.dig(:data, :attributes, :url)
   end
 
   def response_paid
-    puts params.inspect
-    resp = JSON.parse(params.inspect).deep_symbolize_keys
-    raffles = Raffle.where(code: resp.dig(:data, :id))
+    raffles = Raffle.where(code: params["id"])
     raffles.each do |raffle|
-      raffle.update('paid': resp.dig(:data, :attributes, :status))
+      raffle.update('paid': 'completed')
     end
-    redirect_to raffles_path
+    redirect_to gracias_raffles_path
   end
+
   # Parameters: 
   # {
   #   "data"=>
@@ -113,7 +108,7 @@ class RafflesController < ApplicationController
   def set_raffles
     @raffle = Raffle.find(params[:id])
   end
-  def pay_payload(code,amount,work,detail)
+  def pay_payload(code,amount,work,detail, url_response)
     payload =
       {
         data: {
@@ -125,6 +120,9 @@ class RafflesController < ApplicationController
             detail: detail,
             reference_code: code
           }
+        },
+        links:{
+          return_url: url_response
         }
       }
     payload

@@ -6,10 +6,14 @@ Rails.application.routes.draw do
   resources :prices
     get 'all', to: 'prices#all', as: 'all_prices'
   resources :raffles do
+    collection do
+      get :paid
+      get :unpaid
+      get :gracias
+      get :paid
+    end
     member do 
-      get 'paid', to: 'raffles#paid', as: 'paid_raffles'
-      get 'gracias', to: 'raffles#gracias', as: 'gracias'
-      post :response_paid
+      get :response_paid
     end
   end
    
