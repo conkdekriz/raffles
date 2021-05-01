@@ -20868,3 +20868,63 @@ Processing by PricesController#index as HTML
 Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.5ms | Allocations: 18141)
 
 
+Started GET "/" for ::1 at 2021-05-01 14:01:01 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.7ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 11.1ms | Allocations: 12536)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.0ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 4.3ms | Allocations: 2049)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.7ms | Allocations: 18128)
+
+
+Started GET "/" for ::1 at 2021-05-01 14:02:05 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (3.6ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 120.6ms | Allocations: 12540)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 25.2ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 7.1ms | Allocations: 2052)
+Completed 200 OK in 214ms (Views: 204.4ms | ActiveRecord: 3.6ms | Allocations: 18154)
+
+
+Started GET "/" for ::1 at 2021-05-01 14:19:57 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.8ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 8.0ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.4ms | Allocations: 1830)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.8ms | Allocations: 4399)
+
+
+Started GET "/" for ::1 at 2021-05-01 14:20:21 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 18.7ms | Allocations: 12539)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 8.1ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 3.8ms | Allocations: 2049)
+Completed 200 OK in 40ms (Views: 37.5ms | ActiveRecord: 0.5ms | Allocations: 18137)
+
+
+Started GET "/" for ::1 at 2021-05-01 17:03:26 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (1.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 12.8ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 13.8ms | Allocations: 1830)
+  Rendered layouts/_footer_fit.slim (Duration: 0.2ms | Allocations: 9)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 1.5ms | Allocations: 4403)
+
+
