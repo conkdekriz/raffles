@@ -20929,3 +20929,45 @@ Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 1.5ms | Allocations: 440
 
 
   [1m[36mRaffle Load (0.6ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.7ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPrice Update (1.5ms)[0m  [1m[33mUPDATE "prices" SET "rrss" = $1, "updated_at" = $2 WHERE "prices"."id" = $3[0m  [["rrss", ""], ["updated_at", "2021-05-01 21:26:38.249871"], ["id", 13]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2021-05-01 17:26:42 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.9ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 17.6ms | Allocations: 12593)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.6ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.1ms | Allocations: 2049)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.9ms | Allocations: 18183)
+
+
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices" ORDER BY "prices"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2021-05-01 17:29:48 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 11.6ms | Allocations: 12506)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.4ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.9ms | Allocations: 2049)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.4ms | Allocations: 18103)
+
+
+Started GET "/" for ::1 at 2021-05-01 17:30:14 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (1.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 17.9ms | Allocations: 12506)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.2ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 4.8ms | Allocations: 2049)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 1.3ms | Allocations: 18106)
+
+
