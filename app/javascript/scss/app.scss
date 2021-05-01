@@ -151,15 +151,16 @@
   .form-control {
     background-color: var(--background-color);
     color: var(--text-light);
-    border-color: var(--active-accent-color);
+    border-color: black;
   }
   .btn {
     &.btn-primary {
-      background-color: var(--accent-color);
-      border-color: var(--active-accent-color);
-      color: var(--text-dark);
+      background-color: rgb(94, 91, 94);
+      border-color: white;
+      color: white;
+      border-radius: 10px;
       &:hover {
-        background-color: var(--hover-accent-color);
+        background-color: rgb(126, 124, 126);
       }
     }
   }

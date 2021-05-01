@@ -1,12 +1,14 @@
 header.header
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.container
-    a.navbar-brand.p-3 href="#{raffles_path}"  Volver Números
-.row.after-nav
+  nav.navbar.navbar-light.bg-light.fixed-top
+    a.navbar-brand.p-2.text-black href="#{raffles_path}" << Volver
+
+
+    
+.row.after-nav.container
   .col-6
     h2 Valor a Pagar
   .col-6
     h1 = number_to_currency((@number.length)*1000, precision: 0)
-.row
   .col
     = form_for 'raffle', url: raffles_path do
       .form-group
@@ -20,5 +22,5 @@ header.header
         input#email.form-control placeholder=("email") name="raffle[email]" type="text"
       .form-group
         input.form-control name="raffle[number]" type="hidden" value="#{@number}" 
-      .form-group
+      .form-group.mt-2
         button.form-control.btn.btn-primary.btn-lg.btn-block type="submit"  Pagar
