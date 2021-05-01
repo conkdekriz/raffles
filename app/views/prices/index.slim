@@ -1,17 +1,18 @@
 header.header
-  nav.navbar.navbar-expand-lg.navbar-light.bg-dark.fixed-top.p-2.container
-    a.navbar-brand.p-2.text-white href="#" MI RIFA
+  nav.navbar.navbar-light.bg-light.fixed-top
+    a.navbar-brand.p-2.text-black href="#" MI RIFA
     = link_to raffles_path, class: 'btn btn-sm btn-primary' do
       h3 Comprar Número
-h1 Rifa
+
 .row.after-nav.description
-  .col-sm
+  h1 Rifa
+  .col-sm-4
     = image_tag("rifaportada.png", class: 'img-fluid p-2')
-  .col-sm
+  .col-sm-8
     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et fermentum nisl. Duis mauris diam, feugiat quis eros ut, ornare sodales justo. Nam vitae lectus interdum lorem blandit feugiat. Donec sed justo iaculis, scelerisque nunc vel, dignissim tellus. Morbi eget blandit massa, ac imperdiet orci. Maecenas bibendum tellus non libero posuere, luctus auctor nisl tristique. Etiam auctor sit amet dolor eu euismod. Sed pharetra velit augue, vel tempor risus lobortis id. Suspendisse blandit neque ultricies dapibus elementum.
+    h1 Valor : $1000 cada número
 
-
-.row.p-3.after-nav.mt-0
+.row.after-nav.description
   .col
     h1 Premios
   - @prices.each do |price|

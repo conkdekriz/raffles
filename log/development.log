@@ -20226,3 +20226,343 @@ Processing by RafflesController#new as HTML
 Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 18249)
 
 
+Started GET "/raffles" for ::1 at 2021-05-01 12:25:13 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (5.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 133.5ms | Allocations: 17374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 20.0ms | Allocations: 1841)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 173ms (Views: 150.2ms | ActiveRecord: 5.2ms | Allocations: 19988)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:01:34 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.8ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 17.1ms | Allocations: 12266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.0ms | Allocations: 1830)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.8ms | Allocations: 15011)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:01:37 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (1.2ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 5.7ms | Allocations: 1843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.5ms | Allocations: 1827)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.2ms | Allocations: 4313)
+
+
+Started GET "/raffles" for ::1 at 2021-05-01 13:03:05 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (1.2ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 18.2ms | Allocations: 6879)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.6ms | Allocations: 1841)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 1.2ms | Allocations: 9365)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:03:10 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 4.3ms | Allocations: 1843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.1ms | Allocations: 1827)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.5ms | Allocations: 4302)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:08:31 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 13.1ms | Allocations: 12172)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.4ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 3.8ms | Allocations: 2049)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.5ms | Allocations: 17781)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:11:40 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 27.2ms | Allocations: 12215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 1.9ms | Allocations: 2052)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.4ms | Allocations: 17825)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:13:06 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 10.6ms | Allocations: 12215)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 3.2ms | Allocations: 2049)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.4ms | Allocations: 17815)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:13:48 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 23.5ms | Allocations: 12079)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 7.9ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 10.2ms | Allocations: 2049)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.4ms | Allocations: 17679)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:14:05 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:17
+  Rendered prices/index.slim within layouts/rifa (Duration: 30.7ms | Allocations: 12118)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 3.5ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 4.4ms | Allocations: 2049)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.4ms | Allocations: 17710)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:14:53 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 32.8ms | Allocations: 12142)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 31.4ms | Allocations: 2001)
+  Rendered layouts/_footer_fit.slim (Duration: 2.2ms | Allocations: 2053)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.4ms | Allocations: 17751)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:18:53 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 10.7ms | Allocations: 12105)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: a1d4d98e05c8c130e541
+Version: webpack 4.43.0
+Time: 2281ms
+Built at: 05/01/2021 1:19:02 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c32b783025ebee338166.js    152 KiB  application  [emitted] [immutable]  application
+js/application-c32b783025ebee338166.js.map    166 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-c32b783025ebee338166.js js/application-c32b783025ebee338166.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/js/raffle/count_checkbox.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 266 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 13.6 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 9553.7ms | Allocations: 3496)
+  Rendered layouts/_footer_fit.slim (Duration: 4.8ms | Allocations: 2049)
+Completed 200 OK in 9573ms (Views: 9571.6ms | ActiveRecord: 0.4ms | Allocations: 19213)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:19:20 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 3.6ms | Allocations: 1848)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: b3deb7fd39428dba1f4c
+Version: webpack 4.43.0
+Time: 1896ms
+Built at: 05/01/2021 1:19:25 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b0c4956060201dee8b1e.js    152 KiB  application  [emitted] [immutable]  application
+js/application-b0c4956060201dee8b1e.js.map    166 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b0c4956060201dee8b1e.js js/application-b0c4956060201dee8b1e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/js/raffle/count_checkbox.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 266 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 13.6 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 4381.8ms | Allocations: 3234)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 4388ms (Views: 4386.4ms | ActiveRecord: 0.3ms | Allocations: 5717)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:19:37 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.3ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 3.4ms | Allocations: 1843)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: d02002b4797adc87bdef
+Version: webpack 4.43.0
+Time: 2020ms
+Built at: 05/01/2021 1:19:41 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ceb61f72ba8064087adb.js    152 KiB  application  [emitted] [immutable]  application
+js/application-ceb61f72ba8064087adb.js.map    166 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ceb61f72ba8064087adb.js js/application-ceb61f72ba8064087adb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/js/raffle/count_checkbox.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 266 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 13.6 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 4528.6ms | Allocations: 3285)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 4535ms (Views: 4533.5ms | ActiveRecord: 0.3ms | Allocations: 5760)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:26:01 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 10.0ms | Allocations: 12369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.3ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.5ms | Allocations: 2049)
+Completed 200 OK in 24ms (Views: 22.2ms | ActiveRecord: 0.4ms | Allocations: 17963)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:26:18 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (1.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 10.9ms | Allocations: 12401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 5.1ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.6ms | Allocations: 2049)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 1.5ms | Allocations: 17999)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:26:26 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.6ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 21.7ms | Allocations: 12401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.2ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.9ms | Allocations: 2049)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.6ms | Allocations: 18001)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:28:32 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.6ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 14.3ms | Allocations: 12369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 6.4ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 4.8ms | Allocations: 2049)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.6ms | Allocations: 17975)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:30:50 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.5ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 12.8ms | Allocations: 12330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 5.1ms | Allocations: 2049)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.5ms | Allocations: 17932)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:32:21 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.7ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 11.0ms | Allocations: 1851)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 4a2ef58d141a86b04bd5
+Version: webpack 4.43.0
+Time: 2026ms
+Built at: 05/01/2021 1:32:26 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-7de72e850b188f68c985.js    152 KiB  application  [emitted] [immutable]  application
+js/application-7de72e850b188f68c985.js.map    166 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-7de72e850b188f68c985.js js/application-7de72e850b188f68c985.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/js/raffle/count_checkbox.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 266 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 13.6 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 4835.1ms | Allocations: 3289)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 4869ms (Views: 4867.1ms | ActiveRecord: 0.7ms | Allocations: 5782)
+
+
+Started GET "/" for ::1 at 2021-05-01 13:32:46 -0400
+Processing by PricesController#index as HTML
+  Rendering prices/index.slim within layouts/rifa
+  [1m[36mPrice Load (0.4ms)[0m  [1m[34mSELECT "prices".* FROM "prices"[0m
+  ↳ app/views/prices/index.slim:18
+  Rendered prices/index.slim within layouts/rifa (Duration: 9.1ms | Allocations: 12333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 4.8ms | Allocations: 1993)
+  Rendered layouts/_footer_fit.slim (Duration: 2.3ms | Allocations: 2049)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.4ms | Allocations: 17933)
+
+
