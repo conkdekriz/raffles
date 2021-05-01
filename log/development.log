@@ -20928,3 +20928,4 @@ Processing by PricesController#index as HTML
 Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 1.5ms | Allocations: 4403)
 
 
+  [1m[36mRaffle Load (0.6ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles" ORDER BY "raffles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]

@@ -1,6 +1,6 @@
 - raffles = []
 - @raffles.each do |raffle|
-  - raffles << raffle.number.to_s
+  - raffles << raffle.number.to_s if raffle.paid = 'completed'
 header.header
   nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.container
     a.navbar-brand.p-3 href="#{root_path}"  Volver a Premios
