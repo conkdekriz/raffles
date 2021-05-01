@@ -20,7 +20,7 @@ class RafflesController < ApplicationController
   end
   
   def create
-    url = 'http://nimrod.avispa.work/api/v1/charges'
+    url = 'http://www.padpow.com/api/v1/charges'
     # nimrod.avispa.work
     require 'json'
     numbers = JSON.parse(raffle_params(params)[:number])

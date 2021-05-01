@@ -21379,3 +21379,49 @@ Processing by RafflesController#new as HTML
 Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 18097)
 
 
+Started GET "/raffles" for ::1 at 2021-05-01 17:52:42 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.9ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 23.7ms | Allocations: 24605)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_head.html.erb (Duration: 2.8ms | Allocations: 1955)
+  Rendered layouts/_footer_fit.slim (Duration: 1.9ms | Allocations: 2049)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.9ms | Allocations: 30407)
+
+
+Started GET "/raffles" for ::1 at 2021-05-01 17:53:35 -0400
+Processing by RafflesController#index as HTML
+  Rendering raffles/index.slim within layouts/rifa
+  [1m[36mRaffle Load (0.6ms)[0m  [1m[34mSELECT "raffles".* FROM "raffles"[0m
+  ↳ app/views/raffles/index.slim:2
+  Rendered raffles/index.slim within layouts/rifa (Duration: 29.5ms | Allocations: 7747)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/jerker/rifas/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+[Webpacker] Hash: 5d2f52d5f37683d748b8
+Version: webpack 4.43.0
+Time: 1779ms
+Built at: 05/01/2021 5:53:39 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ceb45e6f6bbd06b18fc5.js    152 KiB  application  [emitted] [immutable]  application
+js/application-ceb45e6f6bbd06b18fc5.js.map    166 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ceb45e6f6bbd06b18fc5.js js/application-ceb45e6f6bbd06b18fc5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/js/raffle/count_checkbox.js] 1.64 KiB {application} [built]
+[./app/javascript/packs/application.js] 266 bytes {application} [built]
+[./app/javascript/scss/app.scss] 656 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/scss/app.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/scss/app.scss 13.5 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered layouts/_head.html.erb (Duration: 4354.2ms | Allocations: 3299)
+  Rendered layouts/_footer_fit.slim (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 4387ms (Views: 4384.6ms | ActiveRecord: 0.6ms | Allocations: 11690)
+
+
