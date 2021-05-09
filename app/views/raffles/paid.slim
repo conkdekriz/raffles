@@ -7,10 +7,12 @@
       p[style='font-size: 12px'] = raffle.name
     .col-2
       p[style='font-size: 12px'] = raffle.phone
-    .col-4
+    .col-3
       p[style='font-size: 12px'] = raffle.mail
     .col-1
       p[style='font-size: 12px'] = raffle.number
+    .col-1
+      p[style='font-size: 12px'] = raffle.paid
     .col-1
       = link_to '✏️', edit_raffle_path(raffle.id), class: 'btn btn-primary' 
     .col-1
