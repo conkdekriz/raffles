@@ -1,6 +1,11 @@
-h1 Gracias por ayudar
-p Estaremos informando cuando será el sorteo.
-p recuerda que Camila estará en contacto contigo para agradecer y comentar que tu recibo esta ok.
-
-= link_to raffles_path, class: 'btn btn-primary' do
-  h2 volver a la lista
+.container 
+  .row 
+    .col-12
+      h1 Gracias por ayudar
+      p Estaremos informando cuando será el sorteo.
+      p recuerda que Camila estará en contacto contigo para agradecer y comentar que tu recibo esta ok.
+    .col-12
+      = image_tag("gracias-vuelva-prontos.jpg", class: 'img-fluid p-2')
+    .col-12
+      = link_to raffles_path, class: 'btn btn-primary' do
+        h2 volver a la lista

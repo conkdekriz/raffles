@@ -19,7 +19,7 @@ header.header
   - @prices.each do |price|
     - anon = "%w[Anónimo Anonimo anónimo anonimo]"
     - unless price.rrss.blank? || anon.include?(price&.rrss) 
-      = link_to "#{price.rrss}", class: 'col-6 prices-row ml-1' do
+      = link_to "#{price.rrss}", target: '_blank', class: 'col-6 prices-row ml-1' do
         span.shift-pill[style="background-color: black; color:white"] Ver Instagram
         h4 = "#{price.number} #{price.name}"
         p.card-text  = "#{price.description}"
