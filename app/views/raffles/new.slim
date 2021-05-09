@@ -5,11 +5,15 @@ header.header
 
     
 .row.after-nav.container
+  .col-12
+    p Debes ingresar tus datos en el siguiente formulario, y dar al botón pagar.
   .col-6
     h2 Valor a Pagar
   .col-6
     h1 = number_to_currency((@number.length)*1000, precision: 0)
-  .col
+  .col-12 
+    h4[style='color: red'] Si al apretar el botón te devuelve a la selección de números es por que alguien ya lo reservo.
+  .col-12
     = form_for 'raffle', url: raffles_path do
       .form-group
         .form-control-label for="name" Nombre 

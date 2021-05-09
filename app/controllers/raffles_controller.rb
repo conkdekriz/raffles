@@ -3,7 +3,7 @@ class RafflesController < ApplicationController
 
   layout 'rifa'
   def index
-    @raffles = Raffle.all
+    @raffles = Raffle.where(paid: 'completed')
   end
 
   def new
@@ -20,13 +20,14 @@ class RafflesController < ApplicationController
   end
   
   def create
-    url = 'http://www.padpow.com/api/v1/charges'
+    url = ENV['PAID_URL']
+    puts url
     # nimrod.avispa.work
     require 'json'
     numbers = JSON.parse(raffle_params(params)[:number])
     code = "rifacamila#{numbers.join("")}"
     numbers.each do |number|
-      redirect_to raffles_path unless Raffle.find_by(number: number).nil?
+      return redirect_to raffles_path unless Raffle.find_by(number: number).nil?
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],
@@ -38,10 +39,10 @@ class RafflesController < ApplicationController
     
     work = "Pago Rifa"
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
-    url_response = "http://raffles-app.herokuapp.com/raffles/#{code}/response_paid"
+    url_response = "#{ENV['RESPONSE_URL']}#{code}/response_paid"
     payload = pay_payload(code, amount, work, detail, url_response)
     headers = {
-      'X-API-TOKEN' => '33a2faaf-7406-4742-a469-b8d5a09c6673',
+      'X-API-TOKEN' => ENV['API_TOKEN'],
       'Content-Type' => 'application/json'
     }.freeze
     processed_payload = Oj.dump(payload.deep_stringify_keys)

@@ -90,7 +90,7 @@
   .schedule {
     .header {
       display: grid;
-      grid-template-columns: repeat(5, 2fr) repeat(2, 1fr);
+      grid-template-columns: repeat(10, 1fr) repeat(10, 1fr);
       .day {
         text-align: center;
         font-size: 2rem;
