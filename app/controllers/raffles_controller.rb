@@ -1,5 +1,6 @@
 class RafflesController < ApplicationController 
   before_action :set_raffles, only: %i[edit update]
+  skip_before_action :verify_authenticity_token
 
   layout 'rifa'
   def index
@@ -39,7 +40,7 @@ class RafflesController < ApplicationController
     
     work = "Pago Rifa"
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
-    url_response = "#{ENV['RESPONSE_URL']}#{code}/response_paid"
+    url_response = "#{ENV['RESPONSE_URL']}#{code}/response_status"
     payload = pay_payload(code, amount, work, detail, url_response)
     headers = {
       'X-API-TOKEN' => ENV['API_TOKEN'],
@@ -54,31 +55,22 @@ class RafflesController < ApplicationController
     redirect_to resp.dig(:data, :attributes, :url)
   end
 
-  def response_paid
-    raffles = Raffle.where(code: params["id"])
+  #  /raffles/params[]/response_paid 
+  
+  def response_paid 
+    puts params.inspect
+
+    raffles = Raffle.where(code: params["data"]["id"])
     raffles.each do |raffle|
-      raffle.update('paid': 'completed')
+      raffle.update(paid: params["data"]["attributes"]["status"])
     end
-    redirect_to gracias_raffles_path
   end
 
-  # Parameters: 
-  # {
-  #   "data"=>
-  #     {"id"=>"6364", "type"=>"Payment", 
-  #   "attributes"=>
-  #     {"title"=>"Pago Rifa", 
-  #       "detail"=>"Pago por los siguientes números 63 64", 
-  #       "total_amount"=>"2000", 
-  #       "purchase_order"=>"6364", 
-  #       "pay_date"=>"2021-04-30 15:18:21 UTC", 
-  #       "card_number"=>"XXXX-XXXX-XXXX-7763", 
-  #       "shares_number"=>"0", 
-  #       "authorization_code"=>"1415", 
-  #       "payment_method_name"=>"Venta Débito.", 
-  #       "status"=>"completed"}}, 
-  #     "id"=>"6364"}
-    
+  def response_status
+    raffles = Raffle.where(code: params["id"])
+    @status = raffles.first.paid
+  end
+
   def edit;
   end
 

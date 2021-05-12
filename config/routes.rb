@@ -13,7 +13,8 @@ Rails.application.routes.draw do
       get :paid
     end
     member do 
-      get :response_paid
+      post :response_paid
+      get :response_status
     end
   end
    
