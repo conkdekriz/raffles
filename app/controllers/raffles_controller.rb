@@ -22,6 +22,7 @@ class RafflesController < ApplicationController
   end
   
   def create
+    paying_state = ['completed', 'created']
     url = ENV['PAID_URL']
     puts url
     # nimrod.avispa.work
@@ -29,6 +30,7 @@ class RafflesController < ApplicationController
     numbers = JSON.parse(raffle_params(params)[:number])
     code = "rifacamila#{numbers.join("")}"
     numbers.each do |number|
+      return redirect_to raffles_path if paying_state.include? Raffle.find_by(number: number)&.paid 
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],
