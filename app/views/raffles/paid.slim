@@ -1,6 +1,14 @@
 .row 
   .col 
-    h1 = Raffle.all.count
+    table.m-2.border
+      tr.border
+        th.p-2 Total Pagados
+        th.p-2 Otros estados 
+        th.p-2 Fallados 
+      tr.border
+        td.p-2 = @raffles.where(paid: 'completed').count
+        td.p-2 = @raffles.where.not(paid: 'completed', paid: 'failed').count
+        td.p-2 = @raffles.where(paid: 'failed').count
 - @raffles.each do |raffle|
   .row.border
     .col-3
