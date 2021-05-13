@@ -4,7 +4,8 @@ class RafflesController < ApplicationController
 
   layout 'rifa'
   def index
-    @raffles = Raffle.where(paid: 'completed')
+    paying_state = ['completed', 'created']
+    @raffles = Raffle.where(paid: paying_state)
   end
 
   def new
@@ -28,12 +29,12 @@ class RafflesController < ApplicationController
     numbers = JSON.parse(raffle_params(params)[:number])
     code = "rifacamila#{numbers.join("")}"
     numbers.each do |number|
-      return redirect_to raffles_path unless Raffle.find_by(number: number).nil?
       Raffle.create!(name: raffle_params(params)[:name], 
                     phone: raffle_params(params)[:phone],
                     mail: raffle_params(params)[:mail],
                     number: number,
-                    code: code)
+                    code: code,
+                    paid: 'created')
       
     end
     amount = ((numbers.count) * 1000).to_i
