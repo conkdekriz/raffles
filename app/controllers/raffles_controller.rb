@@ -28,7 +28,7 @@ class RafflesController < ApplicationController
     # nimrod.avispa.work
     require 'json'
     numbers = JSON.parse(raffle_params(params)[:number])
-    code = "rifacamila#{numbers.join("")}"
+    code = "rifaschileonline#{numbers.join("")}"
     numbers.each do |number|
       return redirect_to raffles_path if paying_state.include? Raffle.find_by(number: number)&.paid 
       Raffle.create!(name: raffle_params(params)[:name], 
@@ -61,6 +61,7 @@ class RafflesController < ApplicationController
   #  /raffles/params[]/response_paid 
   
   def response_paid 
+    puts "#"
     puts params.inspect
 
     raffles = Raffle.where(code: params["data"]["id"])
