@@ -71,6 +71,8 @@ class RafflesController < ApplicationController
   end
 
   def response_status
+    puts "#2"
+
     raffles = Raffle.where(code: params["id"])
     @status = raffles.first.paid
   end
