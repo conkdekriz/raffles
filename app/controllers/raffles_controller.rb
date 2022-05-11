@@ -43,7 +43,7 @@ class RafflesController < ApplicationController
     
     work = "Pago Rifa"
     detail = "Pago por los siguientes números #{numbers.join(" ")}"
-    url_response = "#{ENV['RESPONSE_URL']}#{code}/response_status"
+    url_response = "#{ENV['RESPONSE_URL']}#{code}/response_paid"
     payload = pay_payload(code, amount, work, detail, url_response)
     headers = {
       'X-API-TOKEN' => ENV['API_TOKEN'],
