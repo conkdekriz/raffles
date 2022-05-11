@@ -12,7 +12,7 @@ header.header
   .schedule
     = form_for 'numbers', url: new_raffle_path, method: :get do
       .body.selected-number 
-        - 700.times.each do |number|
+        - 900.times.each do |number|
           - unless raffles.include? (number+1).to_s
             input.form-control type="checkbox" name="number[#{number+1}]" class="day" id="#{number+1}"
               label[for="#{number+1}"] = number+1
