@@ -15,7 +15,7 @@
       p[style='font-size: 12px'] = raffle.name
     .col-2
       p[style='font-size: 12px'] = raffle.phone
-    .col-3
+    .col-2
       p[style='font-size: 12px'] = raffle.mail
     .col-1
       p[style='font-size: 12px'] = raffle.number
@@ -23,5 +23,7 @@
       p[style='font-size: 12px'] = raffle.paid
     .col-1
       = link_to '✏️', edit_raffle_path(raffle.id), class: 'btn btn-primary' 
+    .col-1
+      = link_to '$', raffle_payed_path(raffle.id), class: 'btn btn-primary' 
     .col-1
       = link_to '🗑️', raffle_path(raffle.id) , :method => :delete, class: 'btn btn-secondary' 
